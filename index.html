@@ -35,21 +35,24 @@
                 required>
         </div>
         <div>
-            <input type="submit" id="start-game-button" value="Start Game!" aria-label="start-game-button">
+            <input type="submit" id="start-game-button-1" value="Start Game!" aria-label="start-game-button" onclick="showInstructions()">
         </div>
     </section>
 
     <!-- Game instructions-->
-    <section>
-        <h2>
+    <section id="instructions">
+        <h1>
             How to play:
-        </h2>
+        </h1>
         <p>
             Instructions
         </p>
         <p>
             Instructions
         </p>
+        <div>
+            <input type="submit" id="start-game-button-2" value="Go!" aria-label="start-game-button" onclick="showGameSreen()">
+        </div>
     </section>
 
     <!-- Game Screen - CHECK HOW TO SPECIFY WHICH COUNTRY FLAG, INC ALT TAG-->
@@ -65,19 +68,18 @@
             <input type="submit" id="answer-option-1" value="">
             <input type="submit" id="answer-option-2" value="">
             <input type="submit" id="answer-option-3" value="">
-            <input type="submit" id="answer-option-4" value="">
+            <!-- THIS IS JUST A TEMPORARY ON-CLICK FOR TESTING PAGE CYCLING EARLY ON-->
+            <input type="submit" id="answer-option-4" value="" onclick="showEndScreen()">
         </div>
         <!-- Progress and score - CHECK HOW TO GENERATE SPECIFIC NUMBERS, INC. ARIA-LABEL -->
         <div id="progress-and-score">
             <div id="progress" aria-label>
-                <p>Question</p>
-                <p id="question-number">X</p>
-                <p>out of 10</p>
+                <h3>Question 1</h3>
+                <h3>out of 10</h3>
             </div>
             <div id="ingame-score">
-                <p>Score:</p>
-                <p id="score-so-far">X</p>
-                <p>out of 10</p>
+                <h3 id="score-so-far">Score:</h3>
+                <h3>out of 10</h3>
             </div>
         </div>
     </section>
@@ -98,7 +100,7 @@
         </div>
         <!-- Play again button-->
         <div>
-            <input type="submit" id="play-again-button" value="Play Again!" aria-label="Play again button">
+            <input type="submit" id="play-again-button" value="Play Again!" aria-label="Play again button" onclick="returnToStart()">
         </div>
     </section>
 

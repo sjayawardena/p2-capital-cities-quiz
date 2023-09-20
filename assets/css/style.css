@@ -1,0 +1,24 @@
+/* Asterisk wildcard selector to override default syles added by the browser. */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* General styles */
+body {
+    display: flex;
+    flex-direction: column;
+
+    /* Hide screens after intro screen on page load */
+    #instructions {
+        display: none;
+    }
+
+    #game-screen {
+        display: none;
+    }
+
+    #end-screen {
+        display: none;
+    }
