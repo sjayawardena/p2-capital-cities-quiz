@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,7 +10,85 @@
     <link rel="icon" type="image/png" sizes="32x32" href="assets/favicons/icons8-favicon-3d-fluency-32.png">
     <link rel="icon" type="image/png" sizes="96x96" href="assets/favicons/icons8-favicon-3d-fluency-96.png">
 </head>
+
 <body>
-    
+    <!-- Intro screen -->
+    <section id="intro-screen">
+        <!-- Intro image -->
+        <div id="intro-image">
+            <img href="" alt="">
+        </div>
+        <div id="intro-title">
+            <h1>World Capital Cities Quiz</h1>
+        </div>
+        <!-- Player name entry and start game -->
+        <div id="enter-name">
+            <h2>Player name:</h2>
+            <input type="text" id="player-name-start" name="player-name" class="text-input" aria-label="Player name" required>
+        </div>
+        <div>
+            <input type="submit" id="start-game-button" value="Start Game!" aria-label="start-game-button">
+        </div>
+    </section>
+
+    <!-- Game instructions-->
+    <section>
+<h2>
+    How to play:
+</h2>
+<p>
+    Instructions
+</p>
+<p>
+    Instructions
+</p>
+    </section>
+
+    <!-- Game Screen - CHECK HOW TO SPECIFY WHICH COUNTRY FLAG, INC ALT TAG-->
+    <section id="game-screen">
+        <div id="country-flag-image">
+            <img href="" alt="Country flag image">
+        </div>
+        <!-- Country name and answer options -  CHECK HOW TO GENERATE SPECIFIC NAME-->
+        <div>
+            <h2 id="country-name">Country Name</h2>
+        </div>
+        <div id="answer-options">
+                <input type="submit" id="answer-option-1" value="">
+                <input type="submit" id="answer-option-2" value="">
+                <input type="submit" id="answer-option-3" value="">
+                <input type="submit" id="answer-option-4" value="">
+                </div>  
+                <!-- Progress and score - CHECK HOW TO GENERATE SPECIFIC NUMBERS, INC. ARIA-LABEL -->
+                <div id="progress-and-score">
+                    <div id="progress" aria-label>
+                        <p>Question</p> <p id="question-number">X</p> <p>out of 10</p>
+                    </div>
+                    <div id="ingame-score">
+                        <p>Score:</p> <p id="score-so-far">X</p> <p>out of 10</p>
+                    </div>
+                </div>
+    </section>
+<!-- End screen and play again button - CHECK HOW TO GENERATE SPECIFIC SCORE AND MESSAGE -->
+    <section id="end-screen">
+        <!-- End message -->
+        <div>
+            <h2 id="end-message">Well done OR Tough luck,</h2> <h2 id="player-name-final">Name</h2>
+            <h2>You scored:</h2>
+        </div>
+        <!-- End score-->
+        <div>
+            <!-- Background image to score from CSS-->
+            <p id="final-score">X</p>
+            <p id="final-score">out of</p>
+            <p id="final-score">10</p>
+        </div>
+        <!-- Play again button-->
+        <div>
+            <input type="submit" id="play-again-button" value="Play Again!" aria-label="Play again button">
+        </div>
+    </section>
+
 </body>
+
 </html>
