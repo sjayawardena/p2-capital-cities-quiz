@@ -4,11 +4,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Meta tags for search engines -->
+    <meta name="description" content="World Capital Cities Quiz. Test your knowledge of global capitals with this multiple choice, online quiz.>
+    <meta name=" keywords"
+        content="capital cities quiz, capital cities, capital cities test, capital city quiz, capital city test, global capital cities, international capital cities, test capital cities knowledge">
     <title>World Capital Cities Quiz</title>
     <!-- Favicon -->
     <link rel="icon" type="image/png" sizes="16x16" href="assets/favicons/icons8-favicon-3d-fluency-16.png">
     <link rel="icon" type="image/png" sizes="32x32" href="assets/favicons/icons8-favicon-3d-fluency-32.png">
     <link rel="icon" type="image/png" sizes="96x96" href="assets/favicons/icons8-favicon-3d-fluency-96.png">
+
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="assets/css/style.css">
 </head>
 
 <body>
@@ -24,7 +31,8 @@
         <!-- Player name entry and start game -->
         <div id="enter-name">
             <h2>Player name:</h2>
-            <input type="text" id="player-name-start" name="player-name" class="text-input" aria-label="Player name" required>
+            <input type="text" id="player-name-start" name="player-name" class="text-input" aria-label="Player name"
+                required>
         </div>
         <div>
             <input type="submit" id="start-game-button" value="Start Game!" aria-label="start-game-button">
@@ -33,15 +41,15 @@
 
     <!-- Game instructions-->
     <section>
-<h2>
-    How to play:
-</h2>
-<p>
-    Instructions
-</p>
-<p>
-    Instructions
-</p>
+        <h2>
+            How to play:
+        </h2>
+        <p>
+            Instructions
+        </p>
+        <p>
+            Instructions
+        </p>
     </section>
 
     <!-- Game Screen - CHECK HOW TO SPECIFY WHICH COUNTRY FLAG, INC ALT TAG-->
@@ -54,26 +62,31 @@
             <h2 id="country-name">Country Name</h2>
         </div>
         <div id="answer-options">
-                <input type="submit" id="answer-option-1" value="">
-                <input type="submit" id="answer-option-2" value="">
-                <input type="submit" id="answer-option-3" value="">
-                <input type="submit" id="answer-option-4" value="">
-                </div>  
-                <!-- Progress and score - CHECK HOW TO GENERATE SPECIFIC NUMBERS, INC. ARIA-LABEL -->
-                <div id="progress-and-score">
-                    <div id="progress" aria-label>
-                        <p>Question</p> <p id="question-number">X</p> <p>out of 10</p>
-                    </div>
-                    <div id="ingame-score">
-                        <p>Score:</p> <p id="score-so-far">X</p> <p>out of 10</p>
-                    </div>
-                </div>
+            <input type="submit" id="answer-option-1" value="">
+            <input type="submit" id="answer-option-2" value="">
+            <input type="submit" id="answer-option-3" value="">
+            <input type="submit" id="answer-option-4" value="">
+        </div>
+        <!-- Progress and score - CHECK HOW TO GENERATE SPECIFIC NUMBERS, INC. ARIA-LABEL -->
+        <div id="progress-and-score">
+            <div id="progress" aria-label>
+                <p>Question</p>
+                <p id="question-number">X</p>
+                <p>out of 10</p>
+            </div>
+            <div id="ingame-score">
+                <p>Score:</p>
+                <p id="score-so-far">X</p>
+                <p>out of 10</p>
+            </div>
+        </div>
     </section>
-<!-- End screen and play again button - CHECK HOW TO GENERATE SPECIFIC SCORE AND MESSAGE -->
+    <!-- End screen and play again button - CHECK HOW TO GENERATE SPECIFIC SCORE AND MESSAGE -->
     <section id="end-screen">
         <!-- End message -->
         <div>
-            <h2 id="end-message">Well done OR Tough luck,</h2> <h2 id="player-name-final">Name</h2>
+            <h2 id="end-message">Well done OR Tough luck,</h2>
+            <h2 id="player-name-final">Name</h2>
             <h2>You scored:</h2>
         </div>
         <!-- End score-->
@@ -89,6 +102,9 @@
         </div>
     </section>
 
+    <!-- Scripts used for site -->
+    <script src="assets/js/script.js"></script>
+    <script src="assets/js/countries-cities.js"></script>
 </body>
 
 </html>
