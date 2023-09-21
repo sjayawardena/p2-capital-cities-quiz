@@ -107,6 +107,7 @@ Lighthouse - with screenshots++)
 ### Content
 - I produced the written content, layout, colour scheme and design of the website.
 - (++credit any sites where difficulty levels for capital cities were taken from++)
+- Credit for quiz questions: https://www.sporcle.com/games/FilipinoBreloom/world-capitals-by-difficulty
 
 ### Media
 
