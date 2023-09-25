@@ -23,3 +23,49 @@ body {
     #end-screen {
         display: none;
     }
+
+    /* Hide all questions apart from first (JavaScript will show and hide further questions as needed*/
+    
+    #uk-question {
+        display: none;
+    }
+
+    #egypt-question {
+        display: none;
+    }
+
+    #japan-question {
+        display: none;
+    }
+
+    #india-question {
+        display: none;
+    }
+
+    #morocco-question {
+        display: none;
+    }
+
+    #croatia-question {
+        display: none;
+    }
+
+    #philippines-question {
+        display: none;
+    }
+
+    #sri-lanka-question {
+        display: none;
+    }
+
+    #burkina-faso-question {
+        display: none;
+    }
+
+    #suriname-question {
+        display: none;
+    }
+
+    #sudan-question {
+        display: none;
+    }
