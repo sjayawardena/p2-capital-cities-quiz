@@ -1,4 +1,4 @@
-/** EVENT FUNCTIONS FOR CLICKS OR CONDITIONS TO MOVE ONTO NEXT SCREEN OR QUESTION
+/** FUNCTIONS FOR CLICKS OR CONDITIONS TO MOVE ONTO NEXT SCREEN OR IN-GAME QUESTION
  * 'Play Game' button on intro screen will bring up instructions on click
  * 'Play Game' button on instructions screen will bring up game screen on click
  * Selecting an answer on questions shown on the game screen will bring up the next question, and finally the end screen
@@ -78,4 +78,5 @@ function returnToStart() {
     document.getElementById("end-screen").style.display = "none";
     document.getElementById("intro-screen").style.display = "block";
 }
+
 
