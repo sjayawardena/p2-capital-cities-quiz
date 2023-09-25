@@ -19,7 +19,7 @@
 </head>
 
 <body>
-    <!-- Intro screen -->
+    <!-- INTRO SCREEN -->
     <section id="intro-screen">
         <!-- Intro image -->
         <div id="intro-image">
@@ -35,11 +35,12 @@
                 required>
         </div>
         <div>
-            <input type="submit" id="start-game-button-1" value="Start Game!" aria-label="start-game-button" onclick="showInstructions()">
+            <input type="submit" id="start-game-button-1" value="Start Game!" aria-label="start-game-button"
+                onclick="showInstructions()">
         </div>
     </section>
 
-    <!-- Game instructions-->
+    <!-- INSTRUCTIONS SCREEN -->
     <section id="instructions">
         <h1>
             How to play:
@@ -51,26 +52,220 @@
             Instructions
         </p>
         <div>
-            <input type="submit" id="start-game-button-2" value="Go!" aria-label="start-game-button" onclick="showGameSreen()">
+            <input type="submit" id="start-game-button-2" value="Go!" aria-label="start-game-button"
+                onclick="showGameSreen()">
         </div>
     </section>
 
-    <!-- Game Screen - CHECK HOW TO SPECIFY WHICH COUNTRY FLAG, INC ALT TAG-->
+    <!-- GAME SCREEN -->
     <section id="game-screen">
-        <div id="country-flag-image">
-            <img href="" alt="Country flag image">
+
+        <!-- Question and answer options -->
+
+        <!-- Question 1 USA -->
+        <div class="question-screen">
+            <div id="usa-flag-image">
+                <img src="assets/images/flags/usa.jpg" alt="USA flag">
+            </div>
+
+            <div class="question">
+                <h2 id="usa-question">What is the capital of the United States of America (USA)?</h2>
+            </div>
+            <div class="answer-options">
+                <input type="submit" id="paris-answer-option" value="Paris" onclick="showQuestion2()">
+                <input type="submit" id="washington-answer-option" value="Washington, D.C." onclick="showQuestion2()">
+                <input type="submit" id="amsterdam-answer-option" value="Amsterdam" onclick="showQuestion2()">
+                <input type="submit" id="canberra-answer-option" value="Canberra" onclick="showQuestion2()">
+            </div>
         </div>
-        <!-- Country name and answer options -  CHECK HOW TO GENERATE SPECIFIC NAME-->
-        <div>
-            <h2 id="country-name">Country Name</h2>
+
+        <!-- Question 2 UK -->
+        <div class="question-screen">
+            <div id="uk-flag-image">
+                <img src="assets/images/flags/uk.jpg" alt="UK flag">
+            </div>
+
+            <div class="question">
+                <h2 id="uk-question">What is the capital of the United Kingdom (UK)?</h2>
+            </div>
+            <div class="answer-options">
+                <input type="submit" id="london-answer-option" value="London" onclick="showQuestion3()">
+                <input type="submit" id="stockholm-answer-option" value="Stockholm" onclick="showQuestion3()">
+                <input type="submit" id="lisbon-answer-option" value="Lisbon" onclick="showQuestion3()">
+                <input type="submit" id="ottawa-answer-option" value="Ottawa" onclick="showQuestion3()">
+            </div>
         </div>
-        <div id="answer-options">
-            <input type="submit" id="answer-option-1" value="">
-            <input type="submit" id="answer-option-2" value="">
-            <input type="submit" id="answer-option-3" value="">
-            <!-- THIS IS JUST A TEMPORARY ON-CLICK FOR TESTING PAGE CYCLING EARLY ON-->
-            <input type="submit" id="answer-option-4" value="" onclick="showEndScreen()">
+
+        <!-- Question 3 Egypt -->
+        <div class="question-screen">
+            <div id="egypt-flag-image">
+                <img src="assets/images/flags/egypt.png" alt="Egypt flag">
+            </div>
+
+            <div class="question">
+                <h2 id="egypt-question">What is the capital of Egypt?</h2>
+            </div>
+            <div class="answer-options">
+                <input type="submit" id="rome-answer-option" value="Rome" onclick="showQuestion4()">
+                <input type="submit" id="beijing-answer-option" value="Beijing" onclick="showQuestion4()">
+                <input type="submit" id="brasilia-answer-option" value="Brasilia" onclick="showQuestion4()">
+                <input type="submit" id="cairo-answer-option" value="Cairo" onclick="showQuestion4()">
+            </div>
         </div>
+
+        <!-- Question 4 Japan -->
+        <div class="question-screen">
+            <div id="japan-flag-image">
+                <img src="assets/images/flags/japan.png" alt="Japan flag">
+            </div>
+
+            <div class="question">
+                <h2 id="japan-question">What is the capital of Japan?</h2>
+            </div>
+            <div class="answer-options">
+                <input type="submit" id="moscow-answer-option" value="Moscow" onclick="showQuestion5()">
+                <input type="submit" id="madrid-answer-option" value="Madrid" onclick="showQuestion5()">
+                <input type="submit" id="tokyo-answer-option" value="Tokyo" onclick="showQuestion5()">
+                <input type="submit" id="berlin-answer-option" value="Berlin" onclick="showQuestion5()">
+            </div>
+        </div>
+
+        <!-- Question 5 India -->
+        <div class="question-screen">
+            <div id="india-flag-image">
+                <img src="assets/images/flags/india.png" alt="India flag">
+            </div>
+
+            <div class="question">
+                <h2 id="india-question">What is the capital of India?</h2>
+            </div>
+            <div class="answer-options">
+                <input type="submit" id="reykjavik-answer-option" value="Reykjavik" onclick="showQuestion6()">
+                <input type="submit" id="new-delhi-answer-option" value="New Delhi" onclick="showQuestion6()">
+                <input type="submit" id="monrovia-answer-option" value="Monrovia" onclick="showQuestion6()">
+                <input type="submit" id="abu-dhabi-answer-option" value="Abu Dhabi" onclick="showQuestion6()">
+            </div>
+        </div>
+
+        <!-- Question 6 Morocco -->
+        <div class="question-screen">
+            <div id="morocco-flag-image">
+                <img src="assets/images/flags/morocco.png" alt="Morocco flag">
+            </div>
+
+            <div class="question">
+                <h2 id="morocco-question">What is the capital of Morocco?</h2>
+            </div>
+            <div class="answer-options">
+                <input type="submit" id="bratislava-answer-option" value="Bratislava" onclick="showQuestion7()">
+                <input type="submit" id="nairobi-answer-option" value="Nairobi" onclick="showQuestion7()">
+                <input type="submit" id="rabat-answer-option" value="Rabat" onclick="showQuestion7()">
+                <input type="submit" id="tallinn" value="Tallinn" onclick="showQuestion7()">
+            </div>
+        </div>
+
+        <!-- Question 7 Croatia -->
+        <div class="question-screen">
+            <div id="croatia-flag-image">
+                <img src="assets/images/flags/croatia.png" alt="Croatia flag">
+            </div>
+
+            <div class="question">
+                <h2 id="croatia-question">What is the capital of Croatia?</h2>
+            </div>
+            <div class="answer-options">
+                <input type="submit" id="zagreb-answer-option" value="Zagreb" onclick="showQuestion8()">
+                <input type="submit" id="vaduz-answer-option" value="Vaduz" onclick="showQuestion8()">
+                <input type="submit" id="tripoli-answer-option" value="Tripoli" onclick="showQuestion8()">
+                <input type="submit" id="port-au-prince-answer-option" value="Port-au-Prince" onclick="showQuestion8()">
+            </div>
+        </div>
+
+        <!-- Question 8 Philippines -->
+        <div class="question-screen">
+            <div id="philippines-flag-image">
+                <img src="assets/images/flags/philippines.png" alt="Philippines flag">
+            </div>
+
+            <div class="question">
+                <h2 id="philippines-question">What is the capital of The Philippines?</h2>
+            </div>
+            <div class="answer-options">
+                <input type="submit" id="bangkok-answer-option" value="Bangkok" onclick="showQuestion9()">
+                <input type="submit" id="jakarta-answer-option" value="Jakarta" onclick="showQuestion9()">
+                <input type="submit" id="minsk-answer-option" value="Minsk" onclick="showQuestion9()">
+                <input type="submit" id="manila-answer-option" value="Manila" onclick="showQuestion9()">
+            </div>
+        </div>
+
+        <!-- Question 9 Sri Lanka -->
+<div class="question-screen">
+    <div id="sri-lanka-flag-image">
+        <img src="assets/images/flags/sri-lanka.png" alt="Sri Lanka flag">
+    </div>
+
+    <div class="question">
+        <h2 id="sri-lanka-question">What is the capital of Sri Lanka?</h2>
+    </div>
+    <div class="answer-options">
+        <input type="submit" id="colombo-answer-option" value="Colombo" onclick="showQuestion10()">
+        <input type="submit" id="kampala-answer-option" value="Kampala" onclick="showQuestion10()">
+        <input type="submit" id="vientiane-answer-option" value="Vientiane" onclick="showQuestion10()">
+        <input type="submit" id="pristina-answer-option" value="Pristina" onclick="showQuestion10()">
+    </div>
+</div>
+
+<!-- Question 10 Burkina Faso -->
+<div class="question-screen">
+    <div id="burkina-faso-flag-image">
+        <img src="assets/images/flags/burkina-faso.png" alt="Burkina Faso flag">
+    </div>
+
+    <div class="question">
+        <h2 id="burkina-faso-question">What is the capital of Burkina Faso?</h2>
+    </div>
+    <div class="answer-options">
+        <input type="submit" id="abuja-answer-option" value="Colombo" onclick="showQuestion11()">
+        <input type="submit" id="suva-answer-option" value="Kampala" onclick="showQuestion11()">
+        <input type="submit" id="manama-answer-option" value="Vientiane" onclick="showQuestion11()">
+        <input type="submit" id="ouagadougou-answer-option" value="Ouagadougou" onclick="showQuestion11()">
+    </div>
+</div>
+
+<!-- Question 11 Suriname -->
+<div class="question-screen">
+    <div id="suriname-flag-image">
+        <img src="assets/images/flags/suriname.png" alt="Suriname flag">
+    </div>
+
+    <div class="question">
+        <h2 id="suriname-question">What is the capital of Suriname?</h2>
+    </div>
+    <div class="answer-options">
+        <input type="submit" id="ljubljana-answer-option" value="Ljubljana" onclick="showQuestion12()">
+        <input type="submit" id="paramaribo-answer-option" value="Paramaribo" onclick="showQuestion12()">
+        <input type="submit" id="victoria-answer-option" value="Victoria" onclick="showQuestion12()">
+        <input type="submit" id="caracas-answer-option" value="Caracas" onclick="showQuestion12()">
+    </div>
+</div>
+
+<!-- Question 12 Sudan -->
+<div class="question-screen">
+    <div id="sudan-flag-image">
+        <img src="assets/images/flags/sudan.png" alt="Sudan flag">
+    </div>
+
+    <div class="question">
+        <h2 id="sudan-question">What is the capital of Sudan?</h2>
+    </div>
+    <div class="answer-options">
+        <input type="submit" id="dhaka-answer-option" value="Dhaka" onclick="showEndScreen()">
+        <input type="submit" id="managua-answer-option" value="Managua" onclick="showEndScreen()">
+        <input type="submit" id="khartoum-answer-option" value="Khartoum" onclick="showEndScreen()">
+        <input type="submit" id="tashkent-answer-option" value="Tashkent" onclick="showEndScreen()">
+    </div>
+</div>
+
         <!-- Progress and score - CHECK HOW TO GENERATE SPECIFIC NUMBERS, INC. ARIA-LABEL -->
         <div id="progress-and-score">
             <div id="progress" aria-label>
@@ -83,7 +278,7 @@
             </div>
         </div>
     </section>
-    <!-- End screen and play again button - CHECK HOW TO GENERATE SPECIFIC SCORE AND MESSAGE -->
+    <!-- END SCREEN - CHECK HOW TO GENERATE SPECIFIC SCORE AND MESSAGE -->
     <section id="end-screen">
         <!-- End message -->
         <div>
@@ -100,7 +295,8 @@
         </div>
         <!-- Play again button-->
         <div>
-            <input type="submit" id="play-again-button" value="Play Again!" aria-label="Play again button" onclick="returnToStart()">
+            <input type="submit" id="play-again-button" value="Play Again!" aria-label="Play again button"
+                onclick="returnToStart()">
         </div>
     </section>
 

@@ -12,7 +12,7 @@ const quizQuestions = [{
             options: [
                 "Paris",
                 "Washington, D.C.",
-                "Netherlands",
+                "Amsterdam",
                 "Canberra",
             ]
         },
