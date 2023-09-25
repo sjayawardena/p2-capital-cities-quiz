@@ -1,9 +1,10 @@
-/** Array containing countries, capitals, difficulty level, link to flag image 
+/** Array containing questions - countries, capitals, options 
+ * difficulty level (if utilised), link to flag image 
  * Credit for these question ideas and difficulty catergorisations: 
  * https://www.sporcle.com/games/FilipinoBreloom/world-capitals-by-difficulty
  */
 
-const questions = [{
+const countriesCities = [{
         country: "USA",
         capital: "Washington, D.C.",
         difficulty: "Easy",
@@ -29,7 +30,7 @@ const questions = [{
         capital: "Moscow",
         difficulty: "Easy",
         flag: "assets/images/flags/russia.png"
-    },
+    }, 
 
     {
         country: "Netherlands",

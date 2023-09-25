@@ -25,8 +25,3 @@ function returnToStart() {
     document.getElementById("end-screen").style.display = "none";
     document.getElementById("intro-screen").style.display = "block";
 }
-
-function runQuiz() {
-    let flagImage = document.getElementByIdName("country-flag-image");
-    flagImage.innerHTML = 
-}
