@@ -9,6 +9,7 @@
 body {
     display: flex;
     flex-direction: column;
+}
 
     /* Hide screens after intro screen on page load */
     #instructions {
