@@ -70,8 +70,7 @@ function showEndScreen() {
 }
 
 function returnToStart() {
-    document.getElementById("end-screen").style.display = "none";
-    document.getElementById("intro-screen").style.display = "block";
+    location.reload();
 }
 
 /** FUNCTIONS TO RECOGNISE CORRECT ANSWER AND INCREMENT SCORE
