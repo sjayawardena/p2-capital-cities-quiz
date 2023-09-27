@@ -11,64 +11,8 @@ body {
     flex-direction: column;
 }
 
-    /* Hide screens after intro screen on page load */
-
-    #game-screen {
-        display: none;
-    }
-
-    #end-screen {
-        display: none;
-    }
-
-    /* Hide all questions apart from first (JavaScript will show and hide further questions as needed*/
-    
-    #uk-question {
-        display: none;
-    }
-
-    #egypt-question {
-        display: none;
-    }
-
-    #japan-question {
-        display: none;
-    }
-
-    #india-question {
-        display: none;
-    }
-
-    #morocco-question {
-        display: none;
-    }
-
-    #croatia-question {
-        display: none;
-    }
-
-    #philippines-question {
-        display: none;
-    }
-
-    #sri-lanka-question {
-        display: none;
-    }
-
-    #burkina-faso-question {
-        display: none;
-    }
-
-    #suriname-question {
-        display: none;
-    }
-
-    #sudan-question {
-        display: none;
-    }
-  
-    /* Intro screen, image and instructions*/
-    #intro-screen {
+/* Intro screen, image and instructions*/
+#intro-screen {
     display: flex;
     flex-direction: column;
     letter-spacing: 2px;
@@ -77,7 +21,7 @@ body {
 
 #intro-image {
     height: 15%;
-    width:  80%;
+    width: 80%;
     object-fit: cover;
     padding: 15px;
 }
@@ -107,7 +51,7 @@ li {
 /* Start game button */
 
 #start-button-container {
-text-align: center;
+    text-align: center;
 }
 
 #start-game-button {
@@ -115,4 +59,90 @@ text-align: center;
     height: 10vh;
     margin: 10px;
     font-size: 200%;
+}
+
+/* Game screen */
+
+#game-screen {
+    display: flex;
+    flex-direction: column;
+    letter-spacing: 2px;
+    text-align: center;
+}
+.country-flag-image {
+    width: 100%;
+    padding: 15px;
+}
+.question h2 {
+    font-size: 160%;
+    margin: 0px 15px 15px 15px;
+}
+
+.answer-options input {
+    width: 75vw;
+    height: 6vh;
+    margin: 5px;
+}
+.progress {
+    margin-top: 15px;
+}
+
+#ingame-score {
+    margin-top: 15px;
+}
+
+/* HIDE SCREENS AFTER INTRO AND ON PAGE LOAD */
+
+#game-screen {
+    display: none;
+}
+
+#end-screen {
+    display: none;
+}
+
+/* HIDE ALL QUESTIONS APART FROM FIRST (JAVASCRIPT WILL SHOW AND HIDE ALL QUESTIONS AS NEEDED) */
+
+#uk-question {
+    display: none;
+}
+
+#egypt-question {
+    display: none;
+}
+
+#japan-question {
+    display: none;
+}
+
+#india-question {
+    display: none;
+}
+
+#morocco-question {
+    display: none;
+}
+
+#croatia-question {
+    display: none;
+}
+
+#philippines-question {
+    display: none;
+}
+
+#sri-lanka-question {
+    display: none;
+}
+
+#burkina-faso-question {
+    display: none;
+}
+
+#suriname-question {
+    display: none;
+}
+
+#sudan-question {
+    display: none;
 }
