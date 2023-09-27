@@ -69,10 +69,12 @@ li {
     letter-spacing: 2px;
     text-align: center;
 }
+
 .country-flag-image {
     width: 100%;
     padding: 15px;
 }
+
 .question h2 {
     font-size: 160%;
     margin: 0px 15px 15px 15px;
@@ -83,12 +85,22 @@ li {
     height: 6vh;
     margin: 5px;
 }
+
 .progress {
     margin-top: 15px;
 }
 
 #ingame-score {
     margin-top: 15px;
+}
+
+/* End screen and return to start button */
+
+#end-screen {
+    display: flex;
+    flex-direction: column;
+    letter-spacing: 2px;
+    text-align: center;
 }
 
 /* HIDE SCREENS AFTER INTRO AND ON PAGE LOAD */
