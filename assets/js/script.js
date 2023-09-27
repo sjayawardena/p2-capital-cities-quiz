@@ -79,5 +79,50 @@ function returnToStart() {
     document.getElementById("intro-screen").style.display = "block";
 }
 
+/** FUNCTIONS TO RECOGNISE CORRECT ANSWER AND INCREMENT SCORE
+ * commented out as it stops screens switching currently
 
+function correctAnswer() {
+    let correctAnswer = document.getElementsByClassName("correct-answer");
+    correctAnswer.addEventListener("click", incrementScore);
+}
 
+function incrementScore() {
+    let oldScore = parseInt(document.getElementById("score-so-far").innerText);
+    document.getElementById("score-so-far").innerText = ++oldScore;
+}
+
+ */
+
+/** FUNCTION FOR ALERTS FOR INCORRECT OR CORRECT ANSWERS
+ * commented out as it stops screens switching currently
+function alerts() {
+    let correctAnswer = document.getElementsByClassName("correct-answer");
+    correctAnswer.addEventListener(click);
+    let incorrectAnswer = document.getElementsByClassName("incorrect-answer");
+    incorrectAnswer.addEventListener(click);
+    if (correctAnswer) {
+        alert("Well done! That is the correct answer.");
+    } else if (incorrectAnswer) {
+        alert("Tough luck! That answer is incorrect.");
+    }
+}
+*/
+
+/** FUNCTION FOR DISPLAYING FINAL SCORE AND APPROPRIATE END MESSAGE
+ * commented out as it stops screens switching currently
+function finalScore() {
+    document.getElementById("final-score").innerHTML = document.getElementById("final-score").innerHTML("score-so-far")
+}
+
+function endMessage()
+let endScore = document.getElementById("final-score").innerHTML;
+if (endScore >= 0 && endScore <= 4) {
+    document.getElementById("end-message").innerHTML = "Better luck next time!"
+} else if (endScore >= 5 && endScore <= 8) {
+    document.getElementById("end-message").innerHTML = "Good effort!"
+} else if (endScore >= 5 && endScore <= 8) {
+    document.getElementById("end-message").innerHTML = "Well done!"
+}
+
+*/

@@ -23,17 +23,12 @@
     <section id="intro-screen">
         <!-- Intro image -->
         <div id="intro-image">
-            <img href="" alt="">
+            <img src="assets/images/flags/world-flags.png" alt="Globe made up of flags">
         </div>
         <div id="intro-title">
             <h1>World Capital Cities Quiz</h1>
         </div>
-        <!-- Player name entry and start game -->
-        <div id="enter-name">
-            <h2>Player name:</h2>
-            <input type="text" id="player-name-start" name="player-name" class="text-input" aria-label="Player name"
-                required>
-        </div>
+        <!-- Start game button -->
         <div>
             <input type="submit" id="start-game-button-1" value="Start Game!" aria-label="start-game-button"
                 onclick="showInstructions()">
@@ -72,10 +67,10 @@
                 <h2>What is the capital of the United States of America (USA)?</h2>
             </div>
             <div class="answer-options">
-                <input type="submit" id="paris-answer-option" value="Paris" onclick="showQuestion2()">
+                <input type="submit" class="incorrect-answer" id="paris-answer-option" value="Paris" onclick="showQuestion2()">
                 <input type="submit" class="correct-answer" id="washington-answer-option" value="Washington, D.C." onclick="showQuestion2()">
-                <input type="submit" id="amsterdam-answer-option" value="Amsterdam" onclick="showQuestion2()">
-                <input type="submit" id="canberra-answer-option" value="Canberra" onclick="showQuestion2()">
+                <input type="submit" class="incorrect-answer" id="amsterdam-answer-option" value="Amsterdam" onclick="showQuestion2()">
+                <input type="submit" class="incorrect-answer" id="canberra-answer-option" value="Canberra" onclick="showQuestion2()">
             </div>
             <div class="progress">
                 <h3>Question 1 out of 12</h3>
@@ -93,9 +88,9 @@
             </div>
             <div class="answer-options">
                 <input type="submit" class="correct-answer" id="london-answer-option" value="London" onclick="showQuestion3()">
-                <input type="submit" id="stockholm-answer-option" value="Stockholm" onclick="showQuestion3()">
-                <input type="submit" id="lisbon-answer-option" value="Lisbon" onclick="showQuestion3()">
-                <input type="submit" id="ottawa-answer-option" value="Ottawa" onclick="showQuestion3()">
+                <input type="submit" class="incorrect-answer" id="stockholm-answer-option" value="Stockholm" onclick="showQuestion3()">
+                <input type="submit" class="incorrect-answer" id="lisbon-answer-option" value="Lisbon" onclick="showQuestion3()">
+                <input type="submit" class="incorrect-answer" id="ottawa-answer-option" value="Ottawa" onclick="showQuestion3()">
             </div>
             <div class="progress">
                 <h3>Question 2 out of 12</h3>
@@ -112,9 +107,9 @@
                 <h2>What is the capital of Egypt?</h2>
             </div>
             <div class="answer-options">
-                <input type="submit" id="rome-answer-option" value="Rome" onclick="showQuestion4()">
-                <input type="submit" id="beijing-answer-option" value="Beijing" onclick="showQuestion4()">
-                <input type="submit" id="brasilia-answer-option" value="Brasilia" onclick="showQuestion4()">
+                <input type="submit" class="incorrect-answer" id="rome-answer-option" value="Rome" onclick="showQuestion4()">
+                <input type="submit" class="incorrect-answer" id="beijing-answer-option" value="Beijing" onclick="showQuestion4()">
+                <input type="submit" class="incorrect-answer" id="brasilia-answer-option" value="Brasilia" onclick="showQuestion4()">
                 <input type="submit" class="correct-answer" id="cairo-answer-option" value="Cairo" onclick="showQuestion4()">
             </div>
             <div class="progress">
@@ -132,10 +127,10 @@
                 <h2>What is the capital of Japan?</h2>
             </div>
             <div class="answer-options">
-                <input type="submit" id="moscow-answer-option" value="Moscow" onclick="showQuestion5()">
-                <input type="submit" id="madrid-answer-option" value="Madrid" onclick="showQuestion5()">
+                <input type="submit" class="incorrect-answer" id="moscow-answer-option" value="Moscow" onclick="showQuestion5()">
+                <input type="submit" class="incorrect-answer" id="madrid-answer-option" value="Madrid" onclick="showQuestion5()">
                 <input type="submit" class="correct-answer" id="tokyo-answer-option" value="Tokyo" onclick="showQuestion5()">
-                <input type="submit" id="berlin-answer-option" value="Berlin" onclick="showQuestion5()">
+                <input type="submit" class="incorrect-answer" id="berlin-answer-option" value="Berlin" onclick="showQuestion5()">
             </div>
             <div class="progress">
                 <h3>Question 4 out of 12</h3>
@@ -152,10 +147,10 @@
                 <h2>What is the capital of India?</h2>
             </div>
             <div class="answer-options">
-                <input type="submit" id="reykjavik-answer-option" value="Reykjavik" onclick="showQuestion6()">
+                <input type="submit" class="incorrect-answer" id="reykjavik-answer-option" value="Reykjavik" onclick="showQuestion6()">
                 <input type="submit" class="correct-answer" id="new-delhi-answer-option" value="New Delhi" onclick="showQuestion6()">
-                <input type="submit" id="monrovia-answer-option" value="Monrovia" onclick="showQuestion6()">
-                <input type="submit" id="abu-dhabi-answer-option" value="Abu Dhabi" onclick="showQuestion6()">
+                <input type="submit" class="incorrect-answer" id="monrovia-answer-option" value="Monrovia" onclick="showQuestion6()">
+                <input type="submit" class="incorrect-answer" id="abu-dhabi-answer-option" value="Abu Dhabi" onclick="showQuestion6()">
             </div>
             <div class="progress">
                 <h3>Question 5 out of 12</h3>
@@ -172,10 +167,10 @@
                 <h2>What is the capital of Morocco?</h2>
             </div>
             <div class="answer-options">
-                <input type="submit" id="bratislava-answer-option" value="Bratislava" onclick="showQuestion7()">
-                <input type="submit" id="nairobi-answer-option" value="Nairobi" onclick="showQuestion7()">
+                <input type="submit" class="incorrect-answer" id="bratislava-answer-option" value="Bratislava" onclick="showQuestion7()">
+                <input type="submit" class="incorrect-answer" id="nairobi-answer-option" value="Nairobi" onclick="showQuestion7()">
                 <input type="submit" class="correct-answer" id="rabat-answer-option" value="Rabat" onclick="showQuestion7()">
-                <input type="submit" id="tallinn" value="Tallinn" onclick="showQuestion7()">
+                <input type="submit" class="incorrect-answer" id="tallinn" value="Tallinn" onclick="showQuestion7()">
             </div>
             <div class="progress">
                 <h3>Question 6 out of 12</h3>
@@ -193,9 +188,9 @@
             </div>
             <div class="answer-options">
                 <input type="submit" class="correct-answer" id="zagreb-answer-option" value="Zagreb" onclick="showQuestion8()">
-                <input type="submit" id="vaduz-answer-option" value="Vaduz" onclick="showQuestion8()">
-                <input type="submit" id="tripoli-answer-option" value="Tripoli" onclick="showQuestion8()">
-                <input type="submit" id="port-au-prince-answer-option" value="Port-au-Prince" onclick="showQuestion8()">
+                <input type="submit" class="incorrect-answer" id="vaduz-answer-option" value="Vaduz" onclick="showQuestion8()">
+                <input type="submit" class="incorrect-answer" id="tripoli-answer-option" value="Tripoli" onclick="showQuestion8()">
+                <input type="submit" class="incorrect-answer" id="port-au-prince-answer-option" value="Port-au-Prince" onclick="showQuestion8()">
             </div>
             <div class="progress">
                 <h3>Question 7 out of 12</h3>
@@ -212,9 +207,9 @@
                 <h2>What is the capital of The Philippines?</h2>
             </div>
             <div class="answer-options">
-                <input type="submit" id="bangkok-answer-option" value="Bangkok" onclick="showQuestion9()">
-                <input type="submit" id="jakarta-answer-option" value="Jakarta" onclick="showQuestion9()">
-                <input type="submit" id="minsk-answer-option" value="Minsk" onclick="showQuestion9()">
+                <input type="submit" class="incorrect-answer" id="bangkok-answer-option" value="Bangkok" onclick="showQuestion9()">
+                <input type="submit" class="incorrect-answer" id="jakarta-answer-option" value="Jakarta" onclick="showQuestion9()">
+                <input type="submit" class="incorrect-answer" id="minsk-answer-option" value="Minsk" onclick="showQuestion9()">
                 <input type="submit" class="correct-answer" id="manila-answer-option" value="Manila" onclick="showQuestion9()">
             </div>
             <div class="progress">
@@ -233,9 +228,9 @@
             </div>
             <div class="answer-options">
                 <input type="submit" class="correct-answer" id="colombo-answer-option" value="Colombo" onclick="showQuestion10()">
-                <input type="submit" id="kampala-answer-option" value="Kampala" onclick="showQuestion10()">
-                <input type="submit" id="vientiane-answer-option" value="Vientiane" onclick="showQuestion10()">
-                <input type="submit" id="pristina-answer-option" value="Pristina" onclick="showQuestion10()">
+                <input type="submit" class="incorrect-answer" id="kampala-answer-option" value="Kampala" onclick="showQuestion10()">
+                <input type="submit" class="incorrect-answer" id="vientiane-answer-option" value="Vientiane" onclick="showQuestion10()">
+                <input type="submit" class="incorrect-answer" id="pristina-answer-option" value="Pristina" onclick="showQuestion10()">
             </div>
             <div class="progress">
                 <h3>Question 9 out of 12</h3>
@@ -252,9 +247,9 @@
                 <h2>What is the capital of Burkina Faso?</h2>
             </div>
             <div class="answer-options">
-                <input type="submit" id="abuja-answer-option" value="Colombo" onclick="showQuestion11()">
-                <input type="submit" id="suva-answer-option" value="Kampala" onclick="showQuestion11()">
-                <input type="submit" id="manama-answer-option" value="Vientiane" onclick="showQuestion11()">
+                <input type="submit" class="incorrect-answer" id="abuja-answer-option" value="Colombo" onclick="showQuestion11()">
+                <input type="submit" class="incorrect-answer" id="suva-answer-option" value="Kampala" onclick="showQuestion11()">
+                <input type="submit" class="incorrect-answer" id="manama-answer-option" value="Vientiane" onclick="showQuestion11()">
                 <input type="submit" class="correct-answer" id="ouagadougou-answer-option" value="Ouagadougou" onclick="showQuestion11()">
             </div>
             <div class="progress">
@@ -272,10 +267,10 @@
                 <h2>What is the capital of Suriname?</h2>
             </div>
             <div class="answer-options">
-                <input type="submit" id="ljubljana-answer-option" value="Ljubljana" onclick="showQuestion12()">
+                <input type="submit" class="incorrect-answer" id="ljubljana-answer-option" value="Ljubljana" onclick="showQuestion12()">
                 <input type="submit" class="correct-answer" id="paramaribo-answer-option" value="Paramaribo" onclick="showQuestion12()">
-                <input type="submit" id="victoria-answer-option" value="Victoria" onclick="showQuestion12()">
-                <input type="submit" id="caracas-answer-option" value="Caracas" onclick="showQuestion12()">
+                <input type="submit" class="incorrect-answer" id="victoria-answer-option" value="Victoria" onclick="showQuestion12()">
+                <input type="submit" class="incorrect-answer" id="caracas-answer-option" value="Caracas" onclick="showQuestion12()">
             </div>
             <div class="progress">
                 <h3>Question 11 out of 12</h3>
@@ -292,10 +287,10 @@
                 <h2>What is the capital of Sudan?</h2>
             </div>
             <div class="answer-options">
-                <input type="submit" id="dhaka-answer-option" value="Dhaka" onclick="showEndScreen()">
-                <input type="submit" id="managua-answer-option" value="Managua" onclick="showEndScreen()">
+                <input type="submit" class="incorrect-answer" id="dhaka-answer-option" value="Dhaka" onclick="showEndScreen()">
+                <input type="submit" class="incorrect-answer" id="managua-answer-option" value="Managua" onclick="showEndScreen()">
                 <input type="submit" class="correct-answer" id="khartoum-answer-option" value="Khartoum" onclick="showEndScreen()">
-                <input type="submit" id="tashkent-answer-option" value="Tashkent" onclick="showEndScreen()">
+                <input type="submit" class="incorrect-answer" id="tashkent-answer-option" value="Tashkent" onclick="showEndScreen()">
             </div>
             <div class="progress">
                 <h3>Question 12 out of 12</h3>
@@ -304,8 +299,9 @@
 
         <!-- Score - CHECK HOW TO GENERATE SPECIFIC NUMBERS, INC. ARIA-LABEL -->
         <div id="ingame-score">
-            <h3 id="score-so-far">Score:</h3>
-            <h3>out of 12</h3>
+            <span><h3>Score so far: </h3>
+            <h3 id="score-so-far">0</h3>
+            <h3>out of 12</h3></span>
         </div>
         </div>
     </section>
@@ -313,16 +309,14 @@
     <section id="end-screen">
         <!-- End message -->
         <div>
-            <h2 id="end-message">Well done OR Tough luck,</h2>
-            <h2 id="player-name-final">Name</h2>
+            <h2 id="end-message">End message</h2>
             <h2>You scored:</h2>
         </div>
         <!-- End score-->
         <div>
             <!-- Background image to score from CSS-->
             <p id="final-score">X</p>
-            <p id="final-score">out of</p>
-            <p id="final-score">10</p>
+            <p>out of 12</p>
         </div>
         <!-- Play again button-->
         <div>
