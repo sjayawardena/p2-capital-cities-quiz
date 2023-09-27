@@ -1,16 +1,11 @@
 /** FUNCTIONS FOR CLICKS OR CONDITIONS TO MOVE ONTO NEXT SCREEN OR IN-GAME QUESTION
- * 'Play Game' button on intro screen will bring up instructions on click
- * 'Play Game' button on instructions screen will bring up game screen on click
+ * 'Play Game' button on intro screen will bring up game screen on click
  * Selecting an answer on questions shown on the game screen will bring up the next question, and finally the end screen
  * 'Play Again' button will return to intro screen
  */
-function showInstructions() {
-    document.getElementById("intro-screen").style.display = "none";
-    document.getElementById("instructions").style.display = "block";
-}
 
 function showGameSreen() {
-    document.getElementById("instructions").style.display = "none";
+    document.getElementById("intro-screen").style.display = "none";
     document.getElementById("game-screen").style.display = "block";
 }
 

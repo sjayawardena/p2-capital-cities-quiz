@@ -19,25 +19,19 @@
 </head>
 
 <body>
-    <!-- INTRO SCREEN -->
+    <!-- INTRO AND INSTRUCTIONS SCREEN -->
     <section id="intro-screen">
         <!-- Intro image -->
         <div>
             <img src="assets/images/flags/world-flags.png" alt="Globe made up of flags" id="intro-image">
         </div>
         <div id="intro-title">
-            <h1>World Capital Cities Quiz</h1>
+            <h1>Welcome to World Capital Cities Quiz</h1>
         </div>
-        <!-- Start game button -->
-        <div>
-            <input type="submit" id="start-game-button-1" value="Start Game!" aria-label="start-game-button"
-                onclick="showInstructions()">
-        </div>
-    </section>
 
-    <!-- INSTRUCTIONS SCREEN -->
-    <section id="instructions">
-        <h1>
+    <!-- Instructions -->
+    <div id="instructions">
+        <h2>
             How to play:
         </h1>
         <p>
@@ -46,10 +40,12 @@
         <p>
             Instructions
         </p>
+        <!-- Start game button -->
         <div>
             <input type="submit" id="start-game-button-2" value="Go!" aria-label="start-game-button"
                 onclick="showGameSreen()">
         </div>
+    </div>
     </section>
 
     <!-- GAME SCREEN -->
