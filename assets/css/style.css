@@ -69,3 +69,15 @@ body {
     #sudan-question {
         display: none;
     }
+  
+    /* Intro screen and image */
+    #intro-screen {
+    display: flex;
+    flex-direction: column;
+}
+
+#intro-image {
+    height: 350px;
+    width:  100%;
+    object-fit: cover;
+}
