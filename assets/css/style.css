@@ -64,6 +64,7 @@ li {
     background-color: #0E9D37;
     color: #DFF1FF;
     text-shadow: 0 5px 5px #667899;
+    box-shadow: 0 5px 5px #667899;
 }
 
 /* Game screen */
@@ -73,6 +74,9 @@ li {
     flex-direction: column;
     letter-spacing: 2px;
     text-align: center;
+    background-color: #DFF1FF;
+    margin: 10px;
+    bottom: 0px;
 }
 
 .country-flag-image {
@@ -89,6 +93,7 @@ li {
     width: 75vw;
     height: 6vh;
     margin: 5px;
+    box-shadow: 0 5px 5px #667899;
 }
 
 .progress {
@@ -96,7 +101,7 @@ li {
 }
 
 #ingame-score {
-    margin-top: 15px;
+    margin: 15px;
 }
 
 /* End screen, image, end message and return to start button */
@@ -106,6 +111,8 @@ li {
     flex-direction: column;
     letter-spacing: 2px;
     text-align: center;
+    background-color: #DFF1FF;
+    margin: 10px;
 }
 
 #end-screen-image {
@@ -121,11 +128,19 @@ li {
     padding: 5px 15px 5px 15px;
 }
 
+#final-score {
+    font-size: 800%;
+}
+
 #play-again-button {
     width: 50vw;
     height: 10vh;
     margin: 15px;
     font-size: 140%;
+    background-color: #0E9D37;
+    color: #DFF1FF;
+    text-shadow: 0 5px 5px #667899;
+    box-shadow: 0 5px 5px #667899;
 }
 
 
