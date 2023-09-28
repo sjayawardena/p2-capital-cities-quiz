@@ -17,6 +17,8 @@ body {
     flex-direction: column;
     letter-spacing: 2px;
     text-align: center;
+    background-color: #DFF1FF;
+    margin: 10px;
 }
 
 #intro-image {
@@ -33,7 +35,7 @@ body {
 }
 
 #instructions h2 {
-    text-align: center;
+    text-align: center;  
 }
 
 ul {
@@ -57,8 +59,11 @@ li {
 #start-game-button {
     width: 50vw;
     height: 10vh;
-    margin: 10px;
+    margin: 15px;
     font-size: 200%;
+    background-color: #0E9D37;
+    color: #DFF1FF;
+    text-shadow: 0 5px 5px #667899;
 }
 
 /* Game screen */
