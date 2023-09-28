@@ -43,7 +43,7 @@ body {
 
 #instructions h2 {
     font-size: 120%;
-    text-align: center;  
+    text-align: center;
 }
 
 ul {
@@ -66,7 +66,8 @@ li {
 
 #start-game-button {
     font-family: 'Paytone One', sans-serif;
-    letter-spacing: 2px;;
+    letter-spacing: 2px;
+    ;
     width: 50vw;
     height: 10vh;
     margin: 15px;
@@ -168,53 +169,58 @@ li {
 /* MEDIA QUERY: TABLETS AND LARGER (768PX AND UP) */
 @media screen and (min-width: 768px) {
 
-/* Intro screen, image and instructions*/
+    /* Intro screen, image and instructions*/
 
-#intro-image {
-    width: 70%;
+    #intro-image {
+        width: 70%;
+    }
+
+    #intro-title h1 {
+        font-size: 320%;
+    }
+
+    #instructions h2 {
+        font-size: 220%;
+    }
+
+    ul {
+        font-size: 175%;
+    }
+
+    /* Game screen */
+
+    .question h2 {
+        font-size: 250%;
+    }
+
+    .answer-options input {
+        width: 60vw;
+        font-size: 150%;
+    }
+
+    .progress h3 {
+        font-size: 200%;
+    }
+
+    #ingame-score h3 {
+        font-size: 200%;
+    }
+
+    /* End screen */
+    #end-screen-image {
+        width: 70%;
+    }
+
+    #play-again-button {
+        font-size: 250%;
+
+    }
+
 }
 
-#intro-title h1 {
-    font-size: 320%;
-}
+/* LARGE DEVICES (LAPTOPS AND DESKTOPS, 1100PX AND UP) */
+@media screen and (min-width: 1100px) {}
 
-#instructions h2 {
-    font-size: 220%;
-}
-
-ul {
-    font-size: 175%;
-}
-
-/* Game screen */
-
-.question h2 {
-    font-size: 250%;
-}
-
-.answer-options input {
-    width: 60vw;
-    font-size: 150%;
-}
-
-.progress h3 {
-    font-size: 200%;
-}
-
-#ingame-score h3 {
-    font-size: 200%;
-}
-
-/* End screen */
-#end-screen-image 
-{
-    width: 70%;
-}
-
-#play-again-button {
-    font-size: 250%;
-
-}
 
 /* HIDE SCREENS AFTER INTRO AND ON PAGE LOAD */
 
@@ -271,5 +277,3 @@ ul {
 #sudan-question {
     display: none;
 }
-
-
