@@ -194,13 +194,25 @@ ul {
 
 .answer-options input {
     width: 60vw;
-    height: 6vh;
-    margin: 5px;
-    box-shadow: 0 5px 5px #667899;
-    font-family: 'Paytone One', sans-serif;
-    letter-spacing: 2px;
     font-size: 150%;
 }
+
+.progress h3 {
+    font-size: 200%;
+}
+
+#ingame-score h3 {
+    font-size: 200%;
+}
+
+/* End screen */
+#end-screen-image 
+{
+    width: 70%;
+}
+
+#play-again-button {
+    font-size: 250%;
 
 }
 
