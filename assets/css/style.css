@@ -94,7 +94,7 @@ li {
     margin-top: 15px;
 }
 
-/* End screen and return to start button */
+/* End screen, image, end message and return to start button */
 
 #end-screen {
     display: flex;
@@ -102,6 +102,27 @@ li {
     letter-spacing: 2px;
     text-align: center;
 }
+
+#end-screen-image {
+    height: 15%;
+    width: 80%;
+    object-fit: cover;
+    padding: 15px;
+}
+
+#end-message-container h1 {
+    font-size: 180%;
+    text-align: center;
+    padding: 5px 15px 5px 15px;
+}
+
+#play-again-button {
+    width: 50vw;
+    height: 10vh;
+    margin: 15px;
+    font-size: 140%;
+}
+
 
 /* HIDE SCREENS AFTER INTRO AND ON PAGE LOAD */
 

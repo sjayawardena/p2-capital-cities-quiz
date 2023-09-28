@@ -355,22 +355,28 @@
     </section>
     <!-- END SCREEN - CHECK HOW TO GENERATE SPECIFIC SCORE AND MESSAGE -->
     <section id="end-screen">
+        <div id="end-screen-container">
+    <!-- End screen image -->
+    <div>
+        <img src="assets/images/flags/world-flags.png" alt="Globe made up of flags" id="end-screen-image">
+    </div>
         <!-- End message -->
-        <div>
-            <h2 id="end-message">End message</h2>
-            <h2>You scored:</h2>
+        <div id="end-message-container">
+            <h1 id="end-message">End message</h1>
+            <h1>You scored:</h1>
         </div>
         <!-- End score-->
         <div>
             <!-- Background image to score from CSS-->
-            <p id="final-score">X</p>
-            <p>out of 12</p>
+            <h1 id="final-score">X</h1>
+            <h1>out of 12</h1>
         </div>
         <!-- Play again button-->
         <div>
             <input type="submit" id="play-again-button" value="Play Again!" aria-label="Play again button"
                 onclick="returnToStart()">
         </div>
+    </div>
     </section>
 
     <!-- Scripts used for site -->
