@@ -16,6 +16,12 @@ body {
     font-family: 'Work Sans', sans-serif;
 }
 
+/* Progress and score indicators */
+#progress {
+    display: flex;
+    flex-direction: row;
+}
+
 
 
 /* HIDE SCREENS AFTER INTRO - SHOW THROUGH JS FUNCTION ++commented out++
