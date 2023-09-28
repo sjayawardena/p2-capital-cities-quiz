@@ -5,14 +5,14 @@
  */
 
 const countriesCities = [{
-        country: "USA",
+        country: "the United States of America (USA)?",
         capital: "Washington, D.C.",
         difficulty: "Easy",
         flag: "assets/images/flags/usa.jpg"
     },
 
     {
-        country: "United Kingdom",
+        country: "the United Kingdom (UK)",
         capital: "London",
         difficulty: "Easy",
         flag: "assets/images/flags/uk.jpg"
@@ -33,7 +33,7 @@ const countriesCities = [{
     }, 
 
     {
-        country: "Netherlands",
+        country: "The Netherlands",
         capital: "Amsterdam",
         difficulty: "Easy",
         flag: "assets/images/flags/netherlands.png"
@@ -131,7 +131,7 @@ const countriesCities = [{
     },
 
     {
-        country: "Philippines",
+        country: "the Philippines",
         capital: "Manila",
         difficulty: "Medium",
         flag: "assets/images/flags/philippines.png"
@@ -187,7 +187,7 @@ const countriesCities = [{
     },
 
     {
-        country: "United Arab Emirates",
+        country: "the United Arab Emirates",
         capital: "Abu Dhabi",
         difficulty: "Medium",
         flag: "assets/images/flags/uae.png"
@@ -258,7 +258,7 @@ const countriesCities = [{
     },
 
     {
-        country: "Seychelles",
+        country: "the Seychelles",
         capital: "Victoria",
         difficulty: "Hard",
         flag: "assets/images/flags/seychelles.png"

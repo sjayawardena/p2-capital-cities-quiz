@@ -16,3 +16,16 @@ body {
     font-family: 'Work Sans', sans-serif;
 }
 
+
+
+/* HIDE SCREENS AFTER INTRO - SHOW THROUGH JS FUNCTION ++commented out++
+
+#game-screen {
+    display: none;
+}
+
+#end-screen {
+    display: none;
+}
+
+*/
