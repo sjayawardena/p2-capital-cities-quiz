@@ -8,35 +8,34 @@ let answer2Text = document.getElementById("answer-2-text");
 let answer3Text = document.getElementById("answer-3-text");
 let answer4Text = document.getElementById("answer-4-text");
 let questionNumber = document.getElementById("question-number");
-let scoreSoFar = document.getElementById ("score-so-far");
+let scoreSoFar = document.getElementById("score-so-far");
 //STILL NEED TO ADD THEM FOR END SCREEN
 
 
-/** FUNCTIONS TO GET AND DISPLAY A RANDOM QUESTION */
+/** Functions to get and display a random question */
 
 function getRandomInt(quizLength) {
     return Math.floor(Math.random() * quizLength);
-  }
+}
 
-  let randomInt = getRandomInt(quizLength);
+let randomInt = getRandomInt(quizLength);
 
-  function showQuestion() {
-  questionText.innerHTML = quizQuestions[randomInt].question;
+function showQuestion() {
+    questionText.innerHTML = quizQuestions[randomInt].question;
 }
 
 showQuestion()
 
-
-/** FUNCTIONS TO SHOW ANSWER OPTIONS ASSOCIATED WITH QUESTION 
+/** Functions to show answer options associated with question */
 
 function showAnswerOptions() {
-    answer1Text.innerHTML = 
-    answer2Text.innerHTML = 
-    answer3Text.innerHTML = 
-    answer4Text.innerHTML = 
+    answer1Text.innerHTML = quizQuestions[randomInt].options[0];
+    answer2Text.innerHTML = quizQuestions[randomInt].options[1];
+    answer3Text.innerHTML = quizQuestions[randomInt].options[2];
+    answer4Text.innerHTML = quizQuestions[randomInt].options[3];
 }
 
-*/
+showAnswerOptions()
 
 
 
