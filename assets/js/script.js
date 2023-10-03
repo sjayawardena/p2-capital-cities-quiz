@@ -9,11 +9,10 @@ let answer3Text = document.getElementById("answer-3-text");
 let answer4Text = document.getElementById("answer-4-text");
 let questionNumber = document.getElementById("question-number");
 let scoreSoFar = document.getElementById("score-so-far");
+let questionsSoFarArray = [];
 //STILL NEED TO ADD THEM FOR END SCREEN
 
 /** Array to add randomInts to */
-
-let questionsSoFarArray = [];
 
 /** Functions and variables to get and display a random question */
 
