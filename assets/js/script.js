@@ -1,4 +1,4 @@
-/** DEFINING GLOBAL VARIABLES TO BE USED IN FUNCTIONS */
+/** Defining global variables to be used in functions */
 
 const quizLength = quizQuestions.length;
 let flagImage = document.getElementById("flag-image");
@@ -11,14 +11,18 @@ let questionNumber = document.getElementById("question-number");
 let scoreSoFar = document.getElementById("score-so-far");
 //STILL NEED TO ADD THEM FOR END SCREEN
 
+/** Array to add randomInts to */
 
-/** Functions to get and display a random question */
+let questionsSoFarArray = [];
+
+/** Functions and variables to get and display a random question */
 
 function getRandomInt(quizLength) {
-    return Math.floor(Math.random() * quizLength);
+    return Math.floor(Math.random() * quizLength);   
 }
 
 let randomInt = getRandomInt(quizLength);
+questionsSoFarArray.push(randomInt);
 
 function showQuestion() {
     questionText.innerHTML = quizQuestions[randomInt].question;
@@ -37,6 +41,7 @@ function showAnswerOptions() {
 
 showAnswerOptions()
 
+/** Event listeners for clicks on answer options */
 
 
 
