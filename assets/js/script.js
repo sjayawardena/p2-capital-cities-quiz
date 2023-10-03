@@ -74,11 +74,25 @@ function answer3Selected() {
 
 function answer4Selected() {
     if (selectedAnswer4 === quizQuestions[randomInt].answer) {
-        alert("Well done! You got it right.")
+        alert("Well done! You got it right.");
+        incrementScore();
     } else {
         alert("Sorry! You got it wrong.")
     }
 }
+
+/** Function to move onto next question */
+
+function nextQuestion() {
+    
+}
+
+/** Function to increment score on correct answer */
+
+function incrementScore() {
+
+}
+
 
 
 
