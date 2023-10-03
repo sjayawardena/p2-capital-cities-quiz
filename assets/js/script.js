@@ -41,11 +41,44 @@ function showAnswerOptions() {
 
 showAnswerOptions()
 
-/** Event listeners for clicks on answer options */
+/** Variables and functions for checking answer and alerting */
 
+let selectedAnswer1 = answer1Text.innerText;
+let selectedAnswer2 = answer2Text.innerText;
+let selectedAnswer3 = answer3Text.innerText;
+let selectedAnswer4 = answer4Text.innerText;
 
+function answer1Selected() {
+    if (selectedAnswer1 === quizQuestions[randomInt].answer) {
+        alert("Well done! You got it right.")
+    } else {
+        alert("Sorry! You got it wrong.")
+    }
+}
 
+function answer2Selected() {
+    if (selectedAnswer2 === quizQuestions[randomInt].answer) {
+        alert("Well done! You got it right.")
+    } else {
+        alert("Sorry! You got it wrong.")
+    }
+}
 
+function answer3Selected() {
+    if (selectedAnswer3 === quizQuestions[randomInt].answer) {
+        alert("Well done! You got it right.")
+    } else {
+        alert("Sorry! You got it wrong.")
+    }
+}
+
+function answer4Selected() {
+    if (selectedAnswer4 === quizQuestions[randomInt].answer) {
+        alert("Well done! You got it right.")
+    } else {
+        alert("Sorry! You got it wrong.")
+    }
+}
 
 
 
