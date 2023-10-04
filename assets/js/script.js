@@ -10,6 +10,7 @@ let answer4Text = document.getElementById("answer-4-text");
 let questionNumber = document.getElementById("question-number");
 let scoreSoFar = document.getElementById("score-so-far");
 let questionsSoFarArray = []; /** Array to add randomInts to */
+let currentQuestionIndex = getRandomInt();
 //STILL NEED TO ADD THEM FOR END SCREEN
 
 /** Functions and variables to get and display a random question */
@@ -21,7 +22,7 @@ function getRandomInt(quizLength) {
 nextQuestion();
 
 function showQuestion() {
-    questionText.innerHTML = quizQuestions[randomInt].question;
+    questionText.innerHTML = quizQuestions[currentQuestionIndex].question;
 }
 
 showQuestion();
@@ -29,10 +30,10 @@ showQuestion();
 /** Functions to show answer options associated with question */
 
 function showAnswerOptions() {
-    answer1Text.innerHTML = quizQuestions[randomInt].options[0];
-    answer2Text.innerHTML = quizQuestions[randomInt].options[1];
-    answer3Text.innerHTML = quizQuestions[randomInt].options[2];
-    answer4Text.innerHTML = quizQuestions[randomInt].options[3];
+    answer1Text.innerHTML = quizQuestions[currentQuestionIndex].options[0];
+    answer2Text.innerHTML = quizQuestions[currentQuestionIndex].options[1];
+    answer3Text.innerHTML = quizQuestions[currentQuestionIndex].options[2];
+    answer4Text.innerHTML = quizQuestions[currentQuestionIndex].options[3];
 }
 
 showAnswerOptions();
@@ -45,7 +46,7 @@ let selectedAnswer3 = answer3Text.innerText;
 let selectedAnswer4 = answer4Text.innerText;
 
 function answer1Selected() {
-    if (selectedAnswer1 === quizQuestions[randomInt].answer) {
+    if (selectedAnswer1 === quizQuestions[currentQuestionIndex].answer) {
         alert("Well done! You got it right.");
     } else {
         alert("Sorry! You got it wrong.");
@@ -54,7 +55,7 @@ function answer1Selected() {
 }
 
 function answer2Selected() {
-    if (selectedAnswer2 === quizQuestions[randomInt].answer) {
+    if (selectedAnswer2 === quizQuestions[currentQuestionIndex].answer) {
         alert("Well done! You got it right.");
     } else {
         alert("Sorry! You got it wrong.");
@@ -63,7 +64,7 @@ function answer2Selected() {
 }
 
 function answer3Selected() {
-    if (selectedAnswer3 === quizQuestions[randomInt].answer) {
+    if (selectedAnswer3 === quizQuestions[currentQuestionIndex].answer) {
         alert("Well done! You got it right.");
     } else {
         alert("Sorry! You got it wrong.");
@@ -72,7 +73,7 @@ function answer3Selected() {
 }
 
 function answer4Selected() {
-    if (selectedAnswer4 === quizQuestions[randomInt].answer) {
+    if (selectedAnswer4 === quizQuestions[currentQuestionIndex].answer) {
         alert("Well done! You got it right.");
     } else {
         alert("Sorry! You got it wrong.");
@@ -84,12 +85,10 @@ function answer4Selected() {
 
 function nextQuestion() {
     if (questionsSoFarArray.length < 12) {
-        let newRandomInt;
         do {
-            newRandomInt = getRandomInt(quizLength);
-        } while (questionsSoFarArray.includes(newRandomInt));
-        randomInt = newRandomInt;
-        questionsSoFarArray.push(randomInt);
+            currentQuestionIndex = getRandomInt(quizLength);
+        } while (questionsSoFarArray.includes(currentQuestionIndex));
+        questionsSoFarArray.push(currentQuestionIndex);
         showQuestion();
         showAnswerOptions();
     } else {showEndScreen();
