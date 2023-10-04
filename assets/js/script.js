@@ -48,6 +48,7 @@ let selectedAnswer4 = answer4Text.innerText;
 function answer1Selected() {
     if (selectedAnswer1 === quizQuestions[currentQuestionIndex].answer) {
         alert("Well done! You got it right.");
+        incrementScore();
     } else {
         alert("Sorry! You got it wrong.");
     }
@@ -57,6 +58,7 @@ function answer1Selected() {
 function answer2Selected() {
     if (selectedAnswer2 === quizQuestions[currentQuestionIndex].answer) {
         alert("Well done! You got it right.");
+        incrementScore();
     } else {
         alert("Sorry! You got it wrong.");
     }
@@ -66,6 +68,7 @@ function answer2Selected() {
 function answer3Selected() {
     if (selectedAnswer3 === quizQuestions[currentQuestionIndex].answer) {
         alert("Well done! You got it right.");
+        incrementScore();
     } else {
         alert("Sorry! You got it wrong.");
     }
@@ -75,10 +78,11 @@ function answer3Selected() {
 function answer4Selected() {
     if (selectedAnswer4 === quizQuestions[currentQuestionIndex].answer) {
         alert("Well done! You got it right.");
+        incrementScore();
     } else {
         alert("Sorry! You got it wrong.");
+        nextQuestion()
     }
-    nextQuestion()
 }
 
 /** Function to move onto next question */
@@ -91,14 +95,24 @@ function nextQuestion() {
         questionsSoFarArray.push(currentQuestionIndex);
         showQuestion();
         showAnswerOptions();
-    } else {showEndScreen();
+        incrementQuestionNumber()
+    } else {
+        showEndScreen();
     }
+}
+
+/* Function to increment question number */
+
+function incrementQuestionNumber() {
+let oldQuestionNumber = parseInt(questionNumber.innerText);
+questionNumber.innerText = ++oldQuestionNumber;
 }
 
 /** Function to increment score on correct answer */
 
 function incrementScore() {
-
+    let oldScore = parseInt(scoreSoFar.innerText);
+    scoreSoFar.innerText = ++oldScore;
 }
 
 /** Function to show end screem */
