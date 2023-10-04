@@ -9,6 +9,7 @@ let answer3Text = document.getElementById("answer-3-text");
 let answer4Text = document.getElementById("answer-4-text");
 let questionNumber = document.getElementById("question-number");
 let scoreSoFar = document.getElementById("score-so-far");
+let finalScore = document.getElementById("final-score");
 let questionsSoFarArray = []; /** Array to add randomInts to */
 let currentQuestionIndex = getRandomInt();
 //STILL NEED TO ADD THEM FOR END SCREEN
@@ -129,7 +130,10 @@ function incrementScore() {
 function showEndScreen() {
     document.getElementById("game-screen").style.display = "none";
     document.getElementById("end-screen").style.display = "block";
+    finalScore.innerText = scoreSoFar.innerText;
 }
+
+/** Function to display final score on end screen */
 
 function returnToStart() {
     location.reload();
