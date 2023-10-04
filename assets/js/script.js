@@ -21,14 +21,14 @@ questionsSoFarArray.push(randomInt);
 /** Functions and variables to get and display a random question */
 
 function getRandomInt(quizLength) {
-    return Math.floor(Math.random() * quizLength);   
+    return Math.floor(Math.random() * quizLength);
 }
 
 function showQuestion() {
     questionText.innerHTML = quizQuestions[randomInt].question;
 }
 
-showQuestion()
+showQuestion();
 
 /** Functions to show answer options associated with question */
 
@@ -39,7 +39,7 @@ function showAnswerOptions() {
     answer4Text.innerHTML = quizQuestions[randomInt].options[3];
 }
 
-showAnswerOptions()
+showAnswerOptions();
 
 /** Variables and functions for checking answer and alerting */
 
@@ -95,7 +95,7 @@ function answer4Selected() {
 /** Function to move onto next question */
 
 function nextQuestion() {
-    if (currentQuestionIndex < quizLength -1) {
+    if (currentQuestionIndex < quizLength - 1) {
         let newRandomInt;
         do {
             newRandomInt = getRandomInt(quizLength);
@@ -119,7 +119,8 @@ function incrementScore() {
 /** Function to show end screem */
 
 function showEndScreen() {
-
+    document.getElementById("game-screen").style.display = "none";
+    document.getElementById("end-screen").style.display = "block";
 }
 
 /** FUNCTIONS FOR SHOWING/HIDING SCREENS 
