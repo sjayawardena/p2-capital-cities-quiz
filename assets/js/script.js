@@ -13,7 +13,15 @@ let questionsSoFarArray = []; /** Array to add randomInts to */
 let currentQuestionIndex = getRandomInt();
 //STILL NEED TO ADD THEM FOR END SCREEN
 
-/** Functions and variables to get and display a random question */
+/** Function to show game screen after intro screen */
+function showGameSreen() {
+    document.getElementById("intro-screen").style.display = "none";
+    document.getElementById("game-screen").style.display = "block";
+}
+
+/** Functions and variables to get and display a random question
+ * along with the correct country flag
+ */
 
 function getRandomInt(quizLength) {
     return Math.floor(Math.random() * quizLength);
@@ -23,6 +31,7 @@ nextQuestion();
 
 function showQuestion() {
     questionText.innerHTML = quizQuestions[currentQuestionIndex].question;
+    flagImage.src = quizQuestions[currentQuestionIndex].flag;
 }
 
 showQuestion();
@@ -115,23 +124,8 @@ function incrementScore() {
     scoreSoFar.innerText = ++oldScore;
 }
 
-/** Function to show end screem */
+/** Functions for moving to end screen, returning to start */
 
-function showEndScreen() {
-    document.getElementById("game-screen").style.display = "none";
-    document.getElementById("end-screen").style.display = "block";
-}
-
-/** FUNCTIONS FOR SHOWING/HIDING SCREENS 
- * Currently commented out.
-
-
-function showGameSreen() {
-    document.getElementById("intro-screen").style.display = "none";
-    document.getElementById("game-screen").style.display = "block";
-}
-
-++PUT IN APPROPRIATE IF CONDITION FOR 12TH QUESTION++
 function showEndScreen() {
     document.getElementById("game-screen").style.display = "none";
     document.getElementById("end-screen").style.display = "block";
@@ -140,5 +134,3 @@ function showEndScreen() {
 function returnToStart() {
     location.reload();
 }
-
-*/

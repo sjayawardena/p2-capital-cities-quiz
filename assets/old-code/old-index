@@ -367,7 +367,6 @@
             </div>
             <!-- End score-->
             <div>
-                <!-- Background image to score from CSS-->
                 <h1 id="final-score">X</h1>
                 <h1>out of 12</h1>
             </div>

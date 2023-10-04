@@ -22,15 +22,11 @@ body {
     flex-direction: row;
 }
 
-
-
-/* HIDE SCREENS AFTER INTRO - SHOW THROUGH JS FUNCTION ++commented out++
+/* HIDE SCREENS AFTER INTRO - SHOW THROUGH JS FUNCTION  */
 
 #game-screen {
     display: none;
 }
-
-*/
 
 #end-screen {
     display: none;
