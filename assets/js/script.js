@@ -1,17 +1,17 @@
 /** Defining global variables to be used in functions */
 
-const quizLength = quizQuestions.length;
-let flagImage = document.getElementById("flag-image");
-let questionText = document.getElementById("question-text");
-let answer1Text = document.getElementById("answer-1-text");
-let answer2Text = document.getElementById("answer-2-text");
-let answer3Text = document.getElementById("answer-3-text");
-let answer4Text = document.getElementById("answer-4-text");
-let questionNumber = document.getElementById("question-number");
-let scoreSoFar = document.getElementById("score-so-far");
-let finalScore = document.getElementById("final-score");
-let questionsSoFarArray = []; /** Array to add randomInts to */
-let currentQuestionIndex = getRandomInt();
+const quizLength = quizQuestions.length; //sets length of the quiz at 12 questions
+let flagImage = document.getElementById("flag-image"); //variable for relevant country flag image
+let questionText = document.getElementById("question-text"); // variable for randomly selected question from set-questions.js array
+let answer1Text = document.getElementById("answer-1-text"); // varible for first answer option linked to randomly selected question from set-questions.js array
+let answer2Text = document.getElementById("answer-2-text"); // varible for second answer option linked to randomly selected question from set-questions.js array
+let answer3Text = document.getElementById("answer-3-text"); // varible for third answer option linked to randomly selected question from set-questions.js array
+let answer4Text = document.getElementById("answer-4-text"); // varible for fourth answer option linked to randomly selected question from set-questions.js array
+let questionNumber = document.getElementById("question-number"); //variable for displaying question number/progress
+let scoreSoFar = document.getElementById("score-so-far"); // variable for displaying score so far during quiz
+let finalScore = document.getElementById("final-score"); // variable for displaying final score
+let questionsSoFarArray = []; // Array to add currentQuestionIndex to 
+let currentQuestionIndex = getRandomInt(); // assign the getRandomInt() function to currentQuestionIndex variable
 //STILL NEED TO ADD THEM FOR END SCREEN
 
 /** Function to show game screen after intro screen */
@@ -28,7 +28,7 @@ function getRandomInt(quizLength) {
     return Math.floor(Math.random() * quizLength);
 }
 
-nextQuestion();
+nextQuestion(); // this function is defined further down
 
 function showQuestion() {
     questionText.innerHTML = quizQuestions[currentQuestionIndex].question;
@@ -125,15 +125,13 @@ function incrementScore() {
     scoreSoFar.innerText = ++oldScore;
 }
 
-/** Functions for moving to end screen, returning to start */
+/** Functions for moving to end screen, and returning to start */
 
 function showEndScreen() {
     document.getElementById("game-screen").style.display = "none";
     document.getElementById("end-screen").style.display = "block";
     finalScore.innerText = scoreSoFar.innerText;
 }
-
-/** Function to display final score on end screen */
 
 function returnToStart() {
     location.reload();
