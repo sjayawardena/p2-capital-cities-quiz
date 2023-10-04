@@ -22,6 +22,161 @@ body {
     flex-direction: row;
 }
 
+/* Intro screen, image and instructions*/
+#intro-screen {
+    display: flex;
+    flex-direction: column;
+    letter-spacing: 2px;
+    text-align: center;
+    background-color: #DFF1FF;
+    margin: 10px;
+}
+
+#intro-image {
+    height: 15%;
+    width: 80%;
+    object-fit: cover;
+    padding: 15px;
+}
+
+#intro-title h1 {
+    font-family: 'Paytone One', sans-serif;
+    letter-spacing: 3px;
+    font-size: 165%;
+    text-align: center;
+    padding: 5px 15px 5px 15px;
+}
+
+#instructions h2 {
+    font-size: 120%;
+    text-align: center;
+}
+
+ul {
+    font-size: 100%;
+    list-style: circle;
+    list-style-position: inside;
+    padding: 5px 15px 5px 15px;
+    text-align: center;
+}
+
+li {
+    padding-bottom: 5px;
+}
+
+/* Start game button */
+
+#start-button-container {
+    text-align: center;
+}
+
+#start-game-button {
+    font-family: 'Paytone One', sans-serif;
+    letter-spacing: 2px;
+    ;
+    width: 50vw;
+    height: 10vh;
+    margin: 15px;
+    font-size: 200%;
+    background-color: #0E9D37;
+    color: #DFF1FF;
+    text-shadow: 0 5px 5px #667899;
+    box-shadow: 0 5px 5px #667899;
+}
+
+/* Game screen */
+
+#game-screen {
+    display: flex;
+    flex-direction: column;
+    letter-spacing: 2px;
+    text-align: center;
+    background-color: #DFF1FF;
+    margin: 10px;
+    bottom: 0px;
+}
+
+#flag-image {
+    width: 100%;
+    padding: 15px;
+}
+
+#question-container h2 {
+    font-size: 160%;
+    margin: 0px 15px 15px 15px;
+}
+
+.answer-option button {
+    width: 75vw;
+    height: 6vh;
+    margin: 5px;
+    box-shadow: 0 5px 5px #667899;
+    background-color: #8EACE1;
+    font-family: 'Paytone One', sans-serif;
+    letter-spacing: 2px;
+}
+
+/* Progress and score trackers on game screen */
+
+#progress-and-score-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 30px;
+}
+
+#ingame-score-container {
+    display: flex;
+    margin: 15px;
+}
+
+/* End screen, image, end message and return to start button */
+
+#end-screen {
+    letter-spacing: 2px;
+    text-align: center;
+    background-color: #DFF1FF;
+    margin: 10px;
+}
+
+#end-screen-image {
+    height: 15%;
+    width: 80%;
+    object-fit: cover;
+    padding: 15px;
+}
+
+#end-message-container h1 {
+    font-size: 180%;
+    text-align: center;
+    
+}
+
+#end-message {
+    font-size: 180%;
+    font-family: 'Paytone One', sans-serif;
+    letter-spacing: 3px;
+}
+
+#final-score {
+    font-family: 'Paytone One', sans-serif;
+    font-size: 600%;
+}
+
+#play-again-button {
+    width: 70vw;
+    height: 10vh;
+    margin: 15px;
+    font-size: 140%;
+    font-family: 'Paytone One', sans-serif;
+    letter-spacing: 2px;
+    background-color: #0E9D37;
+    color: #DFF1FF;
+    text-shadow: 0 5px 5px #667899;
+    box-shadow: 0 5px 5px #667899;
+}
+
+
 /* HIDE SCREENS AFTER INTRO - SHOW THROUGH JS FUNCTION  */
 
 #game-screen {
@@ -31,5 +186,3 @@ body {
 #end-screen {
     display: none;
 }
-
-
