@@ -9,19 +9,16 @@ let answer3Text = document.getElementById("answer-3-text");
 let answer4Text = document.getElementById("answer-4-text");
 let questionNumber = document.getElementById("question-number");
 let scoreSoFar = document.getElementById("score-so-far");
-let questionsSoFarArray = [];
-let randomInt = getRandomInt(quizLength);
+let questionsSoFarArray = []; /** Array to add randomInts to */
 //STILL NEED TO ADD THEM FOR END SCREEN
-
-/** Array to add randomInts to */
-
-questionsSoFarArray.push(randomInt);
 
 /** Functions and variables to get and display a random question */
 
 function getRandomInt(quizLength) {
     return Math.floor(Math.random() * quizLength);
 }
+
+nextQuestion();
 
 function showQuestion() {
     questionText.innerHTML = quizQuestions[randomInt].question;
