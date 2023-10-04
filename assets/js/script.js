@@ -11,7 +11,6 @@ let questionNumber = document.getElementById("question-number");
 let scoreSoFar = document.getElementById("score-so-far");
 let questionsSoFarArray = [];
 let randomInt = getRandomInt(quizLength);
-let currentQuestionIndex = -1; //Initalised to -1 to start from the first question
 //STILL NEED TO ADD THEM FOR END SCREEN
 
 /** Array to add randomInts to */
@@ -51,62 +50,52 @@ let selectedAnswer4 = answer4Text.innerText;
 function answer1Selected() {
     if (selectedAnswer1 === quizQuestions[randomInt].answer) {
         alert("Well done! You got it right.");
-        incrementScore();
-        nextQuestion()
     } else {
         alert("Sorry! You got it wrong.");
-        nextQuestion()
     }
+    nextQuestion()
 }
 
 function answer2Selected() {
     if (selectedAnswer2 === quizQuestions[randomInt].answer) {
         alert("Well done! You got it right.");
-        incrementScore();
-        nextQuestion()
     } else {
         alert("Sorry! You got it wrong.");
-        nextQuestion()
     }
+    nextQuestion()
 }
 
 function answer3Selected() {
     if (selectedAnswer3 === quizQuestions[randomInt].answer) {
         alert("Well done! You got it right.");
-        incrementScore();
-        nextQuestion();
     } else {
         alert("Sorry! You got it wrong.");
-        nextQuestion()
     }
+    nextQuestion()
 }
 
 function answer4Selected() {
     if (selectedAnswer4 === quizQuestions[randomInt].answer) {
         alert("Well done! You got it right.");
-        incrementScore();
-        nextQuestion();
     } else {
         alert("Sorry! You got it wrong.");
-        nextQuestion()
     }
+    nextQuestion()
 }
 
 /** Function to move onto next question */
 
 function nextQuestion() {
-    if (currentQuestionIndex < quizLength - 1) {
+    if (questionsSoFarArray.length < 12) {
         let newRandomInt;
         do {
             newRandomInt = getRandomInt(quizLength);
         } while (questionsSoFarArray.includes(newRandomInt));
-        currentQuestionIndex++;
         randomInt = newRandomInt;
         questionsSoFarArray.push(randomInt);
         showQuestion();
         showAnswerOptions();
-    } else {
-        showEndScreen();
+    } else {showEndScreen();
     }
 }
 
