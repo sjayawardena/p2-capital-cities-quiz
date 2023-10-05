@@ -39,8 +39,6 @@ function showQuestion() {
     flagImage.src = quizQuestions[currentQuestionIndex].flag;
 }
 
-showQuestion();
-
 /** Functions to show answer options associated with question */
 
 function showAnswerOptions() {
