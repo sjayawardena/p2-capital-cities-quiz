@@ -52,14 +52,7 @@ showAnswerOptions();
 /** Variables and functions for checking answer and alerting 
  * answer1Selected(), answer2Selected(), answer3Selected() and answer4Selected() functions are
  * all called via onclick attributes in index.html
-*/
-
-/*
-let selectedAnswer1 = answer1Text.innerText;
-let selectedAnswer2 = answer2Text.innerText;
-let selectedAnswer3 = answer3Text.innerText;
-let selectedAnswer4 = answer4Text.innerText;
-*/
+ */
 
 function answer1Selected() {
     let selectedAnswer1 = answer1Text.innerText;
@@ -124,8 +117,8 @@ function nextQuestion() {
 /* Function to increment question number */
 
 function incrementQuestionNumber() {
-let oldQuestionNumber = parseInt(questionNumber.innerText);
-questionNumber.innerText = ++oldQuestionNumber;
+    let oldQuestionNumber = parseInt(questionNumber.innerText);
+    questionNumber.innerText = ++oldQuestionNumber;
 }
 
 /** Function to increment score on correct answer */
@@ -136,9 +129,9 @@ function incrementScore() {
 }
 
 /** Functions for moving to end screen, and returning to start
-* showEndScreen() function is called via onclick attribute in index.html
-* returnToStart() function is called via onclick attribute in index.html 
-*/
+ * showEndScreen() function is called via onclick attribute in index.html
+ * returnToStart() function is called via onclick attribute in index.html 
+ */
 
 function showEndScreen() {
     document.getElementById("game-screen").style.display = "none";
@@ -154,7 +147,11 @@ function returnToStart() {
 /** Function for showing relevant message at end based on score ranges */
 function showEndMessage() {
     let displayedFinalScore = parseInt(finalScore.innerText);
-    if (displayedFinalScore <= 4) {endMessage.innerText = "Tough luck!";}
-    else if (displayedFinalScore > 4 && displayedFinalScore < 9) {endMessage.innerText = "Good effort!";}
-    else if (displayedFinalScore > 8 && displayedFinalScore < 13) {endMessage.innerText = "Well done!";}
+    if (displayedFinalScore <= 4) {
+        endMessage.innerText = "Tough luck!";
+    } else if (displayedFinalScore > 4 && displayedFinalScore < 9) {
+        endMessage.innerText = "Good effort!";
+    } else if (displayedFinalScore > 8 && displayedFinalScore < 13) {
+        endMessage.innerText = "Well done!";
+    }
 }
