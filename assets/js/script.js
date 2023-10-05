@@ -101,8 +101,8 @@ function answer4Selected() {
         incrementScore();
     } else {
         alert("Sorry! You got it wrong.");
-        nextQuestion();
     }
+    nextQuestion();
 }
 
 /** Function to move onto next question */
