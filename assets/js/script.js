@@ -54,12 +54,15 @@ showAnswerOptions();
  * all called via onclick attributes in index.html
 */
 
+/*
 let selectedAnswer1 = answer1Text.innerText;
 let selectedAnswer2 = answer2Text.innerText;
 let selectedAnswer3 = answer3Text.innerText;
 let selectedAnswer4 = answer4Text.innerText;
+*/
 
 function answer1Selected() {
+    let selectedAnswer1 = answer1Text.innerText;
     if (selectedAnswer1 === quizQuestions[currentQuestionIndex].answer) {
         alert("Well done! You got it right.");
         incrementScore();
@@ -70,6 +73,7 @@ function answer1Selected() {
 }
 
 function answer2Selected() {
+    let selectedAnswer2 = answer2Text.innerText;
     if (selectedAnswer2 === quizQuestions[currentQuestionIndex].answer) {
         alert("Well done! You got it right.");
         incrementScore();
@@ -80,6 +84,7 @@ function answer2Selected() {
 }
 
 function answer3Selected() {
+    let selectedAnswer3 = answer3Text.innerText;
     if (selectedAnswer3 === quizQuestions[currentQuestionIndex].answer) {
         alert("Well done! You got it right.");
         incrementScore();
@@ -90,6 +95,7 @@ function answer3Selected() {
 }
 
 function answer4Selected() {
+    let selectedAnswer4 = answer4Text.innerText;
     if (selectedAnswer4 === quizQuestions[currentQuestionIndex].answer) {
         alert("Well done! You got it right.");
         incrementScore();
