@@ -36,6 +36,7 @@ nextQuestion(); // this function is defined further down
 function showQuestion() {
     questionText.innerHTML = quizQuestions[currentQuestionIndex].question;
     flagImage.src = quizQuestions[currentQuestionIndex].flag;
+    flagImage.alt = quizQuestions[currentQuestionIndex].alt;
 }
 
 /** Functions to show answer options associated with question */

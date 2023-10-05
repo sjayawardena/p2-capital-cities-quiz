@@ -9,6 +9,7 @@ const quizQuestions = [{
         answer: "Washington, D.C.",
         difficulty: "Easy",
         flag: "assets/images/flags/usa.jpg",
+        alt: "USA flag",
         options: [
             "Paris",
             "Washington, D.C.",
@@ -22,6 +23,7 @@ const quizQuestions = [{
         answer: "London",
         difficulty: "Easy",
         flag: "assets/images/flags/uk.jpg",
+        alt: "UK flag",
         options: [
             "London",
             "Stockholm",
@@ -35,6 +37,7 @@ const quizQuestions = [{
         answer: "Cairo",
         difficulty: "Easy",
         flag: "assets/images/flags/egypt.png",
+        alt: "Egypt flag",
         options: [
             "Rome",
             "Beijing",
@@ -48,6 +51,7 @@ const quizQuestions = [{
         answer: "Tokyo",
         difficulty: "Easy",
         flag: "assets/images/flags/japan.png",
+        alt: "Japan flag",
         options: [
             "Moscow",
             "Madrid",
@@ -64,6 +68,7 @@ const quizQuestions = [{
         answer: "New Delhi",
         difficulty: "Medium",
         flag: "assets/images/flags/india.png",
+        alt: "India flag",
         options: [
             "Reykjavik",
             "New Delhi",
@@ -77,6 +82,7 @@ const quizQuestions = [{
         answer: "Rabat",
         difficulty: "Medium",
         flag: "assets/images/flags/morocco.png",
+        alt: "Morocco flag",
         options: [
             "Bratislava",
             "Nairobi",
@@ -90,6 +96,7 @@ const quizQuestions = [{
         answer: "Zagreb",
         difficulty: "Medium",
         flag: "assets/images/flags/croatia.png",
+        alt: "Croatia flag",
         options: [
             "Zagreb",
             "Vaduz",
@@ -103,6 +110,7 @@ const quizQuestions = [{
         answer: "Manila",
         difficulty: "Medium",
         flag: "assets/images/flags/philippines.png",
+        alt: "Philippines flag",
         options: [
             "Bangkok",
             "Jakarta",
@@ -119,6 +127,7 @@ const quizQuestions = [{
         answer: "Colombo",
         difficulty: "Hard",
         flag: "assets/images/flags/sri-lanka.png",
+        alt: "Sri Lanka flag",
         options: [
             "Colombo",
             "Kampala",
@@ -132,6 +141,7 @@ const quizQuestions = [{
         answer: "Ouagadougou",
         difficulty: "Hard",
         flag: "assets/images/flags/burkina-faso.png",
+        alt: "Burkina Faso flag",
         options: [
             "Abuja",
             "Suva",
@@ -145,6 +155,7 @@ const quizQuestions = [{
         answer: "Paramaribo",
         difficulty: "Hard",
         flag: "assets/images/flags/suriname.png",
+        alt: "Suriname flag",
         options: [
             "Ljubljana",
             "Paramaribo",
@@ -158,6 +169,7 @@ const quizQuestions = [{
         answer: "Khartoum",
         difficulty: "Hard",
         flag: "assets/images/flags/sudan.png",
+        alt: "Suudan flag",
         options: [
             "Dhaka",
             "Managua",
