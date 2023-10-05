@@ -10,6 +10,7 @@ let answer4Text = document.getElementById("answer-4-text"); // varible for fourt
 let questionNumber = document.getElementById("question-number"); //variable for displaying question number/progress
 let scoreSoFar = document.getElementById("score-so-far"); // variable for displaying score so far during quiz
 let finalScore = document.getElementById("final-score"); // variable for displaying final score
+let endMessage = document.getElementById("end-message"); // variable for displaying message at end based on score
 let questionsSoFarArray = []; // Array to add currentQuestionIndex to 
 let currentQuestionIndex = getRandomInt(); // assign the getRandomInt() function to currentQuestionIndex variable
 //STILL NEED TO ADD THEM FOR END SCREEN
@@ -131,8 +132,17 @@ function showEndScreen() {
     document.getElementById("game-screen").style.display = "none";
     document.getElementById("end-screen").style.display = "block";
     finalScore.innerText = scoreSoFar.innerText;
+    showEndMessage();
 }
 
 function returnToStart() {
     location.reload();
+}
+
+/** Function for showing relevant message at end based on score */
+function showEndMessage() {
+    let displayedFinalScore = parseInt(finalScore.innerText);
+    if (displayedFinalScore <= 4) {endMessage.innerText = "Tough luck!";}
+    else if (displayedFinalScore > 4 && displayedFinalScore < 9) {endMessage.innerText = "Good effort!";}
+    else if (displayedFinalScore > 8 && displayedFinalScore < 13) {endMessage.innerText = "Good effort!";}
 }
