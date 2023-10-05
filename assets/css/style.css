@@ -16,12 +16,6 @@ body {
     font-family: 'Work Sans', sans-serif;
 }
 
-/* Progress and score indicators */
-#progress {
-    display: flex;
-    flex-direction: row;
-}
-
 /* Intro screen, image and instructions*/
 #intro-screen {
     display: flex;
@@ -118,6 +112,12 @@ li {
 
 /* Progress and score trackers on game screen */
 
+/* Progress and score indicators */
+#progress {
+    display: flex;
+    flex-direction: row;
+}
+
 #progress-and-score-container {
     display: flex;
     flex-direction: column;
@@ -127,6 +127,7 @@ li {
 
 #ingame-score-container {
     display: flex;
+    flex-direction: row;
     margin: 15px;
 }
 
@@ -149,7 +150,7 @@ li {
 #end-message-container h1 {
     font-size: 180%;
     text-align: center;
-    
+
 }
 
 #end-message {
@@ -176,6 +177,167 @@ li {
     box-shadow: 0 5px 5px #667899;
 }
 
+/* MEDIA QUERY FOR HORIZONTAL PHONES */
+@media screen and (min-width: 576px) {
+
+    /* Intro screen, instructions, start game button */
+
+    #intro-screen {
+        display: flex;
+        flex-direction: row;
+    }
+
+    #intro-image-title-container {
+        display: flex;
+        flex-direction: column;
+        width: 50vw;
+    }
+
+    #intro-image {
+        height: 100%;
+        width: 60%;
+        padding: 10px;
+    }
+
+    #intro-title h1 {
+        font-size: 130%;
+        padding: 10px;
+    }
+
+    #instructions {
+        padding: 10px;
+        width: 50vw;
+    }
+
+    ul {
+        font-size: 90%;
+    }
+
+    #start-game-button {
+        width: 25vw;
+        height: 20vh;
+        margin: 5px;
+        font-size: 150%;
+    }
+
+    /* Game screen, flag image, question text, answer options */
+
+    #game-screen {
+        display: flex;
+        flex-direction: column;
+        padding-bottom: 10px;
+    }
+
+    #flag-question-answers-container {
+        display: flex;
+        flex-direction: row;
+        margin-bottom: 0px;
+    }
+
+    #flag-question-container {
+        display: flex;
+        flex-direction: column;
+        flex-grow: 1;
+        width: 60vh;
+        margin-bottom: 0px;
+    }
+
+    #flag-image {
+        width: 60%;
+        padding: 10px;
+    }
+
+    #question-container h2 {
+        font-size: 120%;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+    #answers-container {
+        width: 40vw;
+        margin-bottom: 0px;
+    }
+
+    .answer-option button {
+        width: 30vw;
+        height: 10vh;
+        margin: 8px;
+    }
+
+    #answer-option-1-container {
+        margin-top: 2px;
+    }
+
+    /* Progress and score trackers on game screen */
+
+    #progress-and-score-container {
+        margin-top: 5px;
+    }
+
+    #progress-and-score-container h3 {
+        font-size: 80%;
+    }
+
+    #progress {
+        margin: 5px;
+    }
+
+    #ingame-score-container {
+        margin: 0px;
+    }
+
+    /* End screen, image, end message and return to start button */
+
+    #end-screen {
+        padding: 15px;
+    }
+
+    #end-screen-container {
+        display: flex;
+        flex-direction: row;
+    }
+
+    #message-score-playagain-container {
+        display: flex;
+        flex-direction: column;
+        padding: 10px;
+        width: 50vw;
+    }
+
+    #end-screen-image-container {
+        display: flex;
+        flex-direction: column;
+        width: 65%;
+
+    }
+
+    #end-screen-image {
+        height: 100%;
+        width: 100%;
+        flex-grow: 1;
+    }
+
+    #end-message-container h1 {
+        font-size: 150%;
+        text-align: center;
+    
+    }
+    
+    #end-message {
+        font-size: 150%;
+    }
+    
+    #final-score {
+        font-size: 400%;
+    }
+    
+    #play-again-button {
+        width: 25vw;
+        height: 20vh;
+        font-size: 100%;
+}
+
+}
 
 /* HIDE SCREENS AFTER INTRO - SHOW THROUGH JS FUNCTION  */
 

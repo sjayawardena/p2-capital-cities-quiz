@@ -23,11 +23,13 @@
     <!-- INTRO AND INSTRUCTIONS SCREEN -->
     <section id="intro-screen">
         <!-- Intro image -->
-        <div>
-            <img src="assets/images/flags/world-flags.png" alt="Globe made up of flags" id="intro-image">
-        </div>
-        <div id="intro-title">
-            <h1>World Capital Cities Quiz</h1>
+        <div id="intro-image-title-container">
+            <div>
+                <img src="assets/images/flags/world-flags.png" alt="Globe made up of flags" id="intro-image">
+            </div>
+            <div id="intro-title">
+                <h1>World Capital Cities Quiz</h1>
+            </div>
         </div>
 
         <!-- Instructions -->
@@ -58,66 +60,69 @@
     <section id="game-screen">
 
         <!-- Question and answer options -->
-        <div id="question-answers-container">
-            <div id="flag-image-container">
-                <img src="" alt="" id="flag-image">
-            </div>
-            <div id="question-container">
-                <h2 id="question-text">Placeholder</h2>
+        <div id="flag-question-answers-container">
+            <div id="flag-question-container">
+                <div id="flag-image-container">
+                    <img src="" alt="" id="flag-image">
+                </div>
+                <div id="question-container">
+                    <h2 id="question-text">Placeholder</h2>
+                </div>
             </div>
             <div id="answers-container">
-                <div class="answer-option">
+                <div class="answer-option" id="answer-option-1-container">
                     <button id="answer-1-text" onclick="answer1Selected()"> Placeholder</button>
                 </div>
-                <div class="answer-option">
+                <div class="answer-option" d="answer-option-2-container">
                     <button id="answer-2-text" onclick="answer2Selected()"> Placeholder</button>
                 </div>
-                <div class="answer-option">
+                <div class="answer-option" d="answer-option-3-container">
                     <button id="answer-3-text" onclick="answer3Selected()"> Placeholder</button>
                 </div>
-                <div class="answer-option">
+                <div class="answer-option" d="answer-option-4-container">
                     <button id="answer-4-text" onclick="answer4Selected()"> Placeholder</button>
                 </div>
             </div>
+        </div>
 
-            <!-- Progress and score indicators -->
-            <div id="progress-and-score-container">
-                <div id="progress">
-                    <h3>Question&nbsp;</h3>
-                    <h3 id="question-number">0 </h3>
-                    <h3>&nbsp;out of 12</h3>
-                </div>
-                <div id="ingame-score-container">
-                    <h3>Score so far:&nbsp;</h3>
-                    <h3 id="score-so-far">0 </h3>
-                </div>
+        <!-- Progress and score indicators -->
+        <div id="progress-and-score-container">
+            <div id="progress">
+                <h3>Question&nbsp;</h3>
+                <h3 id="question-number">0 </h3>
+                <h3>&nbsp;out of 12</h3>
             </div>
+            <div id="ingame-score-container">
+                <h3 id="score-so-far-text">Score so far:&nbsp;</h3>
+                <h3 id="score-so-far">0 </h3>
+            </div>
+        </div>
     </section>
 
     <section id="end-screen">
         <div id="end-screen-container">
             <!-- End screen image -->
-            <div>
+            <div id="end-screen-image-container">
                 <img src="assets/images/flags/world-flags.png" alt="Globe made up of flags" id="end-screen-image">
             </div>
             <!-- End message -->
-            <div id="end-message-container">
-                <h1 id="end-message">End message</h1>
-                <h1>You scored:</h1>
-            </div>
-            <!-- End score-->
-            <div>
-                <h1 id="final-score">X</h1>
-                <h1>out of 12</h1>
-            </div>
-            <!-- Play again button-->
-            <div>
-                <input type="submit" id="play-again-button" value="Play Again!" aria-label="Play again button"
-                    onclick="returnToStart()">
+            <div id="message-score-playagain-container">
+                <div id="end-message-container">
+                    <h1 id="end-message">End message</h1>
+                    <h1>You scored:</h1>
+                </div>
+                <!-- End score-->
+                <div>
+                    <h1 id="final-score">X</h1>
+                    <h1>out of 12</h1>
+                </div>
+                <!-- Play again button-->
+                <div>
+                    <input type="submit" id="play-again-button" value="Play Again!" aria-label="Play again button"
+                        onclick="returnToStart()">
+                </div>
             </div>
         </div>
-    </section>
-
     </section>
 
     <!-- Scripts used for site -->

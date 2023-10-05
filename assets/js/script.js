@@ -13,7 +13,6 @@ let finalScore = document.getElementById("final-score"); // variable for display
 let endMessage = document.getElementById("end-message"); // variable for displaying message at end based on score
 let questionsSoFarArray = []; // Array to add currentQuestionIndex to 
 let currentQuestionIndex = getRandomInt(); // assign the getRandomInt() function to currentQuestionIndex variable
-//STILL NEED TO ADD THEM FOR END SCREEN
 
 /** Function to show game screen after intro screen
  * This is called via onclick attribute in index.html
