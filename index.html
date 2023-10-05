@@ -20,19 +20,18 @@
 </head>
 
 <body>
-
+    <!-- Header -->
+    <header aria-labelledby="logo">
+        <a href="index.html" aria-label="Home page">
+            <h1 id="logo">World Capital Cities Quiz</h1>
+        </a>
+    </header>
     <!-- INTRO AND INSTRUCTIONS SCREEN -->
     <section id="intro-screen">
         <!-- Intro image -->
-        <div id="intro-image-title-container">
-            <div>
-                <img src="assets/images/flags/world-flags.png" alt="Globe made up of flags" id="intro-image">
-            </div>
-            <div id="intro-title">
-                <h1>World Capital Cities Quiz</h1>
-            </div>
+        <div id="intro-image-container">
+            <img src="assets/images/flags/world-flags.png" alt="Globe made up of flags" id="intro-image">
         </div>
-
         <!-- Instructions -->
         <div id="instructions">
             <h2>
@@ -106,13 +105,11 @@
                 <img src="assets/images/flags/world-flags.png" alt="Globe made up of flags" id="end-screen-image">
             </div>
             <!-- End message -->
-            <div id="message-score-playagain-container">
                 <h1 id="end-message">End message</h1>
                 <h1>You scored:</h1>
-            </div>
             <!-- End score-->
             <div>
-                <h1 id="final-score">X</h1>
+                <h1 id="final-score"> </h1>
                 <h1>out of 12</h1>
             </div>
             <!-- Play again button-->
@@ -122,6 +119,13 @@
             </div>
         </div>
     </section>
+    
+    <!-- Footer -->
+    <footer>
+        <p>
+            Made for educational purposes
+        </p>
+    </footer>
 
     <!-- Scripts used for site -->
     <script src="assets/js/set-questions.js"></script>
