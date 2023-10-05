@@ -15,7 +15,10 @@ let questionsSoFarArray = []; // Array to add currentQuestionIndex to
 let currentQuestionIndex = getRandomInt(); // assign the getRandomInt() function to currentQuestionIndex variable
 //STILL NEED TO ADD THEM FOR END SCREEN
 
-/** Function to show game screen after intro screen */
+/** Function to show game screen after intro screen
+ * This is called via onclick attribute in index.html
+ */
+
 function showGameSreen() {
     document.getElementById("intro-screen").style.display = "none";
     document.getElementById("game-screen").style.display = "block";
@@ -49,7 +52,10 @@ function showAnswerOptions() {
 
 showAnswerOptions();
 
-/** Variables and functions for checking answer and alerting */
+/** Variables and functions for checking answer and alerting 
+ * answer1Selected(), answer2Selected(), answer3Selected() and answer4Selected() functions are
+ * all called via onclick attributes in index.html
+*/
 
 let selectedAnswer1 = answer1Text.innerText;
 let selectedAnswer2 = answer2Text.innerText;
@@ -63,7 +69,7 @@ function answer1Selected() {
     } else {
         alert("Sorry! You got it wrong.");
     }
-    nextQuestion()
+    nextQuestion();
 }
 
 function answer2Selected() {
@@ -73,7 +79,7 @@ function answer2Selected() {
     } else {
         alert("Sorry! You got it wrong.");
     }
-    nextQuestion()
+    nextQuestion();
 }
 
 function answer3Selected() {
@@ -83,7 +89,7 @@ function answer3Selected() {
     } else {
         alert("Sorry! You got it wrong.");
     }
-    nextQuestion()
+    nextQuestion();
 }
 
 function answer4Selected() {
@@ -92,7 +98,7 @@ function answer4Selected() {
         incrementScore();
     } else {
         alert("Sorry! You got it wrong.");
-        nextQuestion()
+        nextQuestion();
     }
 }
 
@@ -106,7 +112,7 @@ function nextQuestion() {
         questionsSoFarArray.push(currentQuestionIndex);
         showQuestion();
         showAnswerOptions();
-        incrementQuestionNumber()
+        incrementQuestionNumber();
     } else {
         showEndScreen();
     }
@@ -126,7 +132,10 @@ function incrementScore() {
     scoreSoFar.innerText = ++oldScore;
 }
 
-/** Functions for moving to end screen, and returning to start */
+/** Functions for moving to end screen, and returning to start
+* showEndScreen() function is called via onclick attribute in index.html
+* returnToStart() function is called via onclick attribute in index.html 
+*/
 
 function showEndScreen() {
     document.getElementById("game-screen").style.display = "none";
@@ -139,10 +148,10 @@ function returnToStart() {
     location.reload();
 }
 
-/** Function for showing relevant message at end based on score */
+/** Function for showing relevant message at end based on score ranges */
 function showEndMessage() {
     let displayedFinalScore = parseInt(finalScore.innerText);
     if (displayedFinalScore <= 4) {endMessage.innerText = "Tough luck!";}
     else if (displayedFinalScore > 4 && displayedFinalScore < 9) {endMessage.innerText = "Good effort!";}
-    else if (displayedFinalScore > 8 && displayedFinalScore < 13) {endMessage.innerText = "Good effort!";}
+    else if (displayedFinalScore > 8 && displayedFinalScore < 13) {endMessage.innerText = "Well done!";}
 }
