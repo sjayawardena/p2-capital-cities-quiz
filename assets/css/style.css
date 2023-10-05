@@ -14,6 +14,9 @@ body {
     display: flex;
     flex-direction: column;
     font-family: 'Work Sans', sans-serif;
+    background-color: #DFF1FF;
+    height: 100vh;
+    border: 15px solid white;
 }
 
 /* Intro screen, image and instructions*/
@@ -22,8 +25,6 @@ body {
     flex-direction: column;
     letter-spacing: 2px;
     text-align: center;
-    background-color: #DFF1FF;
-    margin: 10px;
 }
 
 #intro-image {
@@ -85,8 +86,6 @@ li {
     flex-direction: column;
     letter-spacing: 2px;
     text-align: center;
-    background-color: #DFF1FF;
-    margin: 10px;
     bottom: 0px;
 }
 
@@ -136,8 +135,6 @@ li {
 #end-screen {
     letter-spacing: 2px;
     text-align: center;
-    background-color: #DFF1FF;
-    margin: 10px;
 }
 
 #end-screen-image {
