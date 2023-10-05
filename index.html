@@ -29,9 +29,7 @@
     <!-- INTRO AND INSTRUCTIONS SCREEN -->
     <section id="intro-screen">
         <!-- Intro image -->
-        <div id="intro-image-container">
-            <img src="assets/images/flags/world-flags.png" alt="Globe made up of flags" id="intro-image">
-        </div>
+        <img src="assets/images/flags/world-flags.png" alt="Globe made up of flags" id="intro-image">
         <!-- Instructions -->
         <div id="instructions">
             <h2>
@@ -49,10 +47,10 @@
                 </li>
             </ul>
             <!-- Start game button -->
-            <div id="start-button-container">
-                <input type="submit" id="start-game-button" value="Go!" aria-label="start-game-button"
-                    onclick="showGameSreen()">
-            </div>
+        </div>
+        <div id="start-button-container">
+            <input type="submit" id="start-game-button" value="Go!" aria-label="start-game-button"
+                onclick="showGameSreen()">
         </div>
     </section>
 
@@ -99,27 +97,25 @@
     </section>
 
     <section id="end-screen">
-        <div id="end-screen-container">
-            <!-- End screen image -->
-            <div id="end-screen-image-container">
-                <img src="assets/images/flags/world-flags.png" alt="Globe made up of flags" id="end-screen-image">
-            </div>
-            <!-- End message -->
-                <h1 id="end-message">End message</h1>
-                <h1>You scored:</h1>
-            <!-- End score-->
-            <div>
-                <h1 id="final-score"> </h1>
-                <h1>out of 12</h1>
-            </div>
-            <!-- Play again button-->
-            <div>
-                <input type="submit" id="play-again-button" value="Play Again!" aria-label="Play again button"
-                    onclick="returnToStart()">
-            </div>
+        <!-- End screen image -->
+        <div id="end-screen-image-container">
+            <img src="assets/images/flags/world-flags.png" alt="Globe made up of flags" id="end-screen-image">
+        </div>
+        <!-- End message -->
+        <h1 id="end-message">End message</h1>
+        <h1>You scored:</h1>
+        <!-- End score-->
+        <div>
+            <h1 id="final-score"> </h1>
+            <h1 id="out-of">out of 12</h1>
+        </div>
+        <!-- Play again button-->
+        <div>
+            <input type="submit" id="play-again-button" value="Play Again!" aria-label="Play again button"
+                onclick="returnToStart()">
         </div>
     </section>
-    
+
     <!-- Footer -->
     <footer>
         <p>
