@@ -33,7 +33,7 @@ As a new user I want to:
 - Try to score as highly as possible on the quiz.
 - Be entertained for a period of time.
 
-An an existing user I want to:
+As an existing user I want to:
 - Try to beat previous scores on the quiz.
 - Refresh knowledge of global capital cities.
 - Check back for any additions to the quiz's bank of questions.
@@ -68,7 +68,7 @@ It's hoped they are clean, inviting fonts that do not look overly formal.
 
 Paytone One is used for the title/logo in the header, all text that appears on buttons (the start button, the answer option buttons and the play again button), the end message generated based on score, and the final score number.
 
-Work Sans is used for the intructions, the text in the footer, the text for each question, the progress tracker on the game screen, the score tracker on the game screen, and the text immediately above and below the final score number on the end screen ("You scored:" and "out of 12").
+Work Sans is used for the instructions, the text in the footer, the text for each question, the progress tracker on the game screen, the score tracker on the game screen, and the text immediately above and below the final score number on the end screen ("You scored:" and "out of 12").
 
 Letter spacing of 2 or 3 pixels is applied to all text on the site, apart from the text in the footer. The intention is to make the text easier to read and more pleasing on the eye.
 
@@ -76,9 +76,9 @@ Letter spacing of 2 or 3 pixels is applied to all text on the site, apart from t
 
 Wireframes were drawn up at the start to help with a rough plan for the layout of each screen (intro, game, end), and to brainstorm initial ideas on JavaScript functions/variables, and features of the site.
 
-The wireframes covered the intended mobile apperance of the site, as well as tablet, with the idea that the latter set of styling would apply to all screen sizes from tablet up.
+The wireframes covered the intended mobile appearance of the site, as well as tablet, with the idea that the latter set of styling would apply to all screen sizes from tablet up.
 
-In the end, some features from the wireframes were ommited for simplicity - namely the inputting of the user's name and the selection of difficulty level.
+In the end, some features from the wireframes were omitted for simplicity - namely the inputting of the user's name and the selection of difficulty level.
 
 ![Wireframe for intro screen](assets/images/screenshots-for-readme/project-2-wireframes-intro.png)
 ![Wireframe for game screen](assets/images/screenshots-for-readme/project-2-wireframes-game-screen.png)
@@ -166,7 +166,7 @@ In the end, some features from the wireframes were ommited for simplicity - name
 
 #### Final Score and End Message
 
-- Underneath the end screen hero image detailed already, the user is shown their final score out of 12, along with a message approriate to their score range. 
+- Underneath the end screen hero image detailed already, the user is shown their final score out of 12, along with a message appropriate to their score range. 
 - The message for a score between 1 and 4 is: "Tough luck!" 
 - The message for a score between 5 and 8 is: "Good effort!"
 - The message for a score between 9 and 12 is: "Well done! 
@@ -214,8 +214,8 @@ To deploy the live site from the GitHub repository, these steps as outlined on C
 - HTML5 - to code for each page.
 - CSS - to style each page.
 - JavaScript - to program all elements of how the quiz functions and moves through screens.
-- [Github](https://github.com/) - to create and store the repository for the website.
-- [GitPod](https://www.gitpod.io/) - the Integrated Development Environment (IDE) used to build the site, and to 'git commit' and 'git push' back to the Github repository.
+- [GitHub](https://github.com/) - to create and store the repository for the website.
+- [GitPod](https://www.gitpod.io/) - the Integrated Development Environment (IDE) used to build the site, and to 'git commit' and 'git push' back to the GitHub repository.
 - [Balsamiq](https://balsamiq.com/wireframes/) - Application used on Mac to create wireframes.
 - [Google Fonts](https://fonts.google.com/) - both fonts used in this project were chosen via Google Fonts and linked to at the top of the 'style.css' file.
 - [icons8 website](https://icons8.com/) - the favicons were downloaded from here.
@@ -230,7 +230,7 @@ To deploy the live site from the GitHub repository, these steps as outlined on C
 
 ## Testing
 
-The website was tested on the Chrome, Safari and Firefox browsers. On each browser, it was inspected in mobile view (including iPhone SE and Galaxy Fold), and the the view styled for tablet and up (600px width and up).
+The website was tested on the Chrome, Safari and Firefox browsers. On each browser, it was inspected in mobile view (including iPhone SE and Galaxy Fold), and the view styled for tablet and up (600px width and up).
 
 On each browser, in all display sizes/modes, all of the following have been tested and confirmed as working:
 - The intro, game and end screens all appear as expected with all features and styling present.
@@ -252,7 +252,7 @@ Problems encountered in testing phases - both at the end of the process and at v
 - The answer checking JavaScript functions were not working beyond the first question. This was found to be happening because four variables in script.js - 'selectedAnswer1 = answer1Text.innerText', 'selectedAnswer2 = answer2Text.innerText', 'selectedAnswer3 = answer3Text.innerText', and 'selectedAnswer4 = answer4Text.innerText' - were wrongly being declared outside the relevant functions for checking all four answer options in the quiz. Once they were moved to be declared inside these functions - 'answer1Selected()', 'answer2Selected()', 'answer3Selected()', and 'answer4Selected()' - the quiz then worked as expected, with the correct feedback given on all answer options for each question.
 - When the correct answer was selected on the questions for Egypt, The Philippines or Burkina Faso, the quiz did not progress to the next question. This was found to be because the 'nextQuestion()' function was being called too early within the 'answer3Selected()' and 'answer4Selected()' functions. Once it was moved outside the curly braces it was in, the problem stopped happening.
 - The first question did not always move onto the second after the answer was selected. When this stopped happening, I realised the issue only occurred when the first question was Egypt, The Philippines or Burkina Faso, and so the fix to the previous issue also fixed this.
-- There was an issue with the flag images for the UK and the USA questions, which are slighly different dimensions to the other flag images, overflowing off the edge of the screen. Changing the CSS styling to 'max-width: 100%' for the flag images fixed this, and stopped the 2 flag images in question overflowing their divs.
+- There was an issue with the flag images for the UK and the USA questions, which are slightly different dimensions to the other flag images, overflowing off the edge of the screen. Changing the CSS styling to 'max-width: 100%' for the flag images fixed this, and stopped the 2 flag images in question overflowing their divs.
 - The background colour was not covering the whole screen. This was because it had been applied to the intro, game and end screens' section elements, rather than to the body element. Applying the background colour and appropriate CSS styling to the body element fixed this issue.
 
 ### Validator Testing
