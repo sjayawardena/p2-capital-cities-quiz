@@ -257,9 +257,17 @@ Problems encountered in testing phases - both at the end of the process and at v
 
 ### Validator Testing
 
-(++WC3 for both HTML and CSS - with screenshots
+The site's script.js JavaScript file passed through [JS Hint](https://jshint.com/) validator service successfully. The only issues displayed were because JS Hint could not see the contents of adjacent files in the repository, and so:
+- The warnings about the 'quizQuestions' variable not being defined did not need to be addressed, because the variable is defined in the repository's 'set-questions.js' file. The quiz's functioning is proof of this file being successfully detected and by extension the quizQuestions variable being adequately defined.
+- The six 'unused variables' it points out are functions that are defined within script.js, but not called within script.js. This is because they are instead successfully called via 'onclick' listener attributes in the project's index.html file. But JS Hint cannot see the contents of this. Adding event listeners within script.js would stop JS Hint throwing up this issue. For example, regarding the function for checking answer 1 when selected, this event listener could be applied: 'answer1Text.addEventListener("click", answer1Selected())'. And so on for 2, 3 and 4. But this is not required, because instead the onclick listeners in the project's index.html work as expected.
 
-JS Hint for JavaScript - with screenshots
+![Screenshot of JS Hint validation](assets/images/screenshots-for-readme/project-2-jshint-screenshot.png)
+
+The site's style.css has passed through the [W3C validation](https://validator.w3.org/) process.
+![W3 CSS validation](assets/images/screenshots-for-readme/project-2-w3c-css-validation.png)
+
+
+(++WC3 for both HTML and CSS - with screenshots
 
 Lighthouse - with screenshots++)
 
