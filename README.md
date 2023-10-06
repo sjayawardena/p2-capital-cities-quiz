@@ -14,6 +14,8 @@ The game is targeted at people who want to test their knowledge of capital citie
 
 It is also useful for those who want to test their capitals knowledge with a mixture of difficulty levels.
 
+This is a link to the deployed site: https://sjayawardena.github.io/p2-capital-cities-quiz/ 
+
 ## User Experience (UX)
 
 ### User Demographic
@@ -86,7 +88,11 @@ In the end, some features from the wireframes were ommited for simplicity - name
 
 ### Existing Features
 
-Screenshots in this section are from the mobile version of the site.
+#### Introduction Screen
+
+- The introduction screen is the first screen the user sees, effectively acting as a home/landing page. The features of the intro screen are detailed below.
+
+![Screenshot of intro screen](assets/images/screenshots-for-readme/project-2-intro-screen.png)
 
 #### Header
 
@@ -98,19 +104,96 @@ Screenshots in this section are from the mobile version of the site.
 
 - The intro and end screens both feature a main image of a flag made up of globes to add color in keeping with the site's subject matter.
 
-![Screen shot of intro and end screen hero image](assets/images/screenshots-for-readme/project-2-intro-end-hero-screenshot.png)
+![Screenshot of intro and end screen hero image](assets/images/screenshots-for-readme/project-2-intro-end-hero-screenshot.png)
 
 #### Instructions
 
 - The intro screen features a brief runthrough of instructions and what to expect in the quiz.
 
-[Screen shot of instructions](assets/images/screenshots-for-readme/project-2-instructions-screenshot.png)
+![Screenshot of instructions](assets/images/screenshots-for-readme/project-2-instructions-screenshot.png)
+
+#### Start Quiz Button
+
+- The button at the bottom of the intro screen (with "Go!" written on it) is used to begin the quiz.
+
+![Screenshot of start button](assets/images/screenshots-for-readme/project-2-start-button-screenshot.png)
+
+#### Footer
+
+- The footer appears at the bottom of each screen, with small text making clear that the site has been made for educational purposes.
+
+![Screenshot of footer](assets/images/screenshots-for-readme/project-2-footer-screenshot.png)
+
+#### Game Screen
+
+- The game screen appears after the intro screen, and cycles through all 12 of the quiz's questions. The features of the game screen are detailed below.
+
+![Screenshot of game screen](assets/images/screenshots-for-readme/project-2-game-screen.png)
+
+#### Game Screen Flag Hero Image
+
+- The game screen features a hero image of the flag of the country to which the current question relates, and this image changes with each question.
+
+![Screenshot of flag hero image](assets/images/screenshots-for-readme/project-2-gamescreen-hero-screenshot.png)
+
+#### Current Question
+
+- The current question on the game screen asks the user what the capital city is of the country randomly chosen from the 12 questions allowed for in the site's JavaScript.
+
+![Screenshot of question](assets/images/screenshots-for-readme/project-2-question-screenshot.png)
+
+#### Answer Options and Ensuing Feedback
+
+- There are four answer options for each question, each displayed via a button that the user can press to select their answer. Doing this brings up an alert to tell them whether their answer was right or wrong. All are screenshotted here.
+
+![Screenshot of answer options](assets/images/screenshots-for-readme/project-2-answer-options-screenshot.png)
+
+![Screenshot of right alert](assets/images/screenshots-for-readme/project-2-right-alert-screenshot.png)
+
+![Screenshot of wrong alert](assets/images/screenshots-for-readme/project-2-wrong-alert-screenshot.png)
+
+#### Progress and score tracker
+
+- Underneath the answer options, there is a progress tracker that tells the user how many questions out of 12 they have answered, and a score tracker that tells them how many they have got right so far.
+
+![Screenshot of progress and score tracker](assets/images/screenshots-for-readme/project-2-progress-and-score-screenshot.png)
+
+### End screen
+
+- The end screen is the last screen that the user sees, and appears at the end of the quiz. The features of the end screen are detailed below.
+
+![Screenshot of end screen](assets/images/screenshots-for-readme/project-2-end-screen.png)
+
+#### Final Score and End Message
+
+- Underneath the end screen hero image detailed already, the user is shown their final score out of 12, along with a message approriate to their score range. 
+- The message for a score between 1 and 4 is: "Tough luck!" 
+- The message for a score between 5 and 8 is: "Good effort!"
+- The message for a score between 9 and 12 is: "Well done! 
+
+![Screenshot of end message and final score](assets/images/screenshots-for-readme/project-2-end-score-message-screenshot.png)
+
+#### Play Again Button
+
+- The button at the bottom of the end screen (with "Play Again!" written on it) is used to restart the quiz by taking the user back to the intro screen.
+
+![Screen shot of play again button](assets/images/screenshots-for-readme/project-2-play-again-button.png)
 
 ### Features Left To Implement
 
-#### (++high score tracking feature, difficulty level++)
+#### High Score Tracking
 
-##Deployment
+- I would like the site to be able to track the user's previous highest score, so they could try to beat it.
+
+#### Larger Question Bank
+
+- A much larger bank of countries/cities to be randomly picked for the quiz's 12 questions would give it much more replayability. 
+
+#### Select Difficulty
+
+- This would depend on the larger question bank feature also being implemented. Users would be able to set the difficulty level of the quiz at the start, depending how much of a challenge they want.
+
+## Deployment
 
 The site was set up by creating a new repository on GitHub, using this template from CodeInstitute.
 
