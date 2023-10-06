@@ -158,7 +158,7 @@ In the end, some features from the wireframes were ommited for simplicity - name
 
 ![Screenshot of progress and score tracker](assets/images/screenshots-for-readme/project-2-progress-and-score-screenshot.png)
 
-### End screen
+#### End screen
 
 - The end screen is the last screen that the user sees, and appears at the end of the quiz. The features of the end screen are detailed below.
 
@@ -199,31 +199,61 @@ The site was set up by creating a new repository on GitHub, using this template 
 
 The development environment used was GitPod. This was opened initially via the green 'GitPod' button that appeared on the repo's listing on GitHub.
 
-The initial 'git add', 'git commit' and 'git push' were made on 17 September 2023. There have been over XX further commits since then.
+The initial 'git add', 'git commit' and 'git push' were made on 17 September 2023. There have been nearly 70 further commits since then.
 
 The regular commits and pushes were sent from GitPod back to the repo on GitHub.
 
 To deploy the live site from the GitHub repository, these steps as outlined on Code Institute's sample README file for the Love Running project were followed:
 
-In the GitHub repository, navigate to the Settings tab
-From the source section drop-down menu, select the Main Branch
-Once the main branch has been selected, the page will be automatically refreshed with a detailed ribbon display to indicate the successful deployment.
+- In the GitHub repository, navigate to the Settings tab
+- From the source section drop-down menu, select the Main Branch
+- Once the main branch has been selected, the page will be automatically refreshed with a detailed ribbon display to indicate the successful deployment.
 
 ## Technologies Used
 
-(++list all++)
+- HTML5 - to code for each page.
+- CSS - to style each page.
+- JavaScript - to program all elements of how the quiz functions and moves through screens.
+- [Github](https://github.com/) - to create and store the repository for the website.
+- [GitPod](https://www.gitpod.io/) - the Integrated Development Environment (IDE) used to build the site, and to 'git commit' and 'git push' back to the Github repository.
+- [Balsamiq](https://balsamiq.com/wireframes/) - Application used on Mac to create wireframes.
+- [Google Fonts](https://fonts.google.com/) - both fonts used in this project were chosen via Google Fonts and linked to at the top of the 'style.css' file.
+- [icons8 website](https://icons8.com/) - the favicons were downloaded from here.
+- [Color Space website](https://mycolor.space) - used to select colour scheme.
+- [Pixabay website](https://pixabay.com/) - royalty-free flag images vector art images were downloaded from here for use during the quiz, as well as the start and end screen globe-of-flags hero image.
+- [Chrome DevTools](https://developer.chrome.com/docs/devtools/) - used to inspect the website and its performance at every step of development.
+- [Lighthouse](https://developer.chrome.com/docs/lighthouse/overview/) - used to assess the overall quality of the site.
+- [W3C Markup Validation site](https://validator.w3.org/) - used to find issues in the html for the site and to resolve them 
+- [W3C CSS Validation site](https://jigsaw.w3.org/css-validator/) - used to find issues in the CSS for the site and to resolve them.
+- [JS Hint validation site](https://jshint.com/) - used to find issues in the JavaScript for the site and to resolve them.
+- [Am I Responsive? site](https://ui.dev/amiresponsive) - used to generate screenshots of the site across different devices and screen sizes.
 
 ## Testing
 
-(++browsers and screen sizes testing on++)
+The website was tested on the Chrome, Safari and Firefox browsers. On each browser, it was inspected in mobile view (including iPhone SE and Galaxy Fold), and the the view styled for tablet and up (600px width and up).
 
-(++Try to use html markdown testing table this time++)
+On each browser, in all display sizes/modes, all of the following have been tested and confirmed as working:
+- The intro, game and end screens all appear as expected with all features and styling present.
+- The header appears on every screen - intro, game and end - and the logo/title can be tapped/clicked to return to the intro screen.
+- The hero image of the intro and end screen appears as expected.
+- The instructions on the intro screen appear as expected.
+- The start game button successfully progresses the user to the game screen and begins the quiz.
+- The footer appears on every screen -  intro, game and end - including the text within it.
+- The correct flag image appears for each country/question on the game screen.
+- The text of each question on the game screen is correct and appears alongside the expected flag and answer options.
+- The answer options on the game screen all work when pressed/clicked, and the JavaScript functions mean they give the user the right feedback about whether their answer was correct or incorrect.
+- The progress tracker on the game screen correctly increases by 1 throughout the quiz up to question 12.
+- The score tracker on the game screen correctly increments by 1 every time the user achieves a correct answer.
+- The end message on the end screen generates as expected based on score ranges.
+- The final score on the end screen is correct at the end of the quiz.
+- The play again button on the end screen brings the user back to the intro screen to start the quiz again.
 
-On each browser, in all display sizes/modes, all of the following were tested and confirmed as working:
-(++list all features checked++)
-
-Problems encountered in this phase included:
-(++list main problems encountered and how they were fixed++)
+Problems encountered in testing phases - both at the end of the process and at various stages during the process - include:
+- The answer checking JavaScript functions were not working beyond the first question. This was found to be happening because four variables in script.js - 'selectedAnswer1 = answer1Text.innerText', 'selectedAnswer2 = answer2Text.innerText', 'selectedAnswer3 = answer3Text.innerText', and 'selectedAnswer4 = answer4Text.innerText' - were wrongly being declared outside the relevant functions for checking all four answer options in the quiz. Once they were moved to be declared inside these functions - 'answer1Selected()', 'answer2Selected()', 'answer3Selected()', and 'answer4Selected()' - the quiz then worked as expected, with the correct feedback given on all answer options for each question.
+- When the correct answer was selected on the questions for Egypt, The Philippines or Burkina Faso, the quiz did not successfully progress to the next question. This was found to be because the 'nextQuestion()' function was being called too early within the 'answer3Selected()' and 'answer4Selected()' functions. Once it was moved outside the curly braces it was on, the problem stopped happening.
+- The first question did not always successfully move onto the second after the answer was selected. When this stopped happening, I realised the issue only occurred when the first question was Egypt, The Philippines or Burkina Faso, and so the fix to the previous issue also fixed this.
+- There was an issue with the flag images for the UK and the USA questions, which are slighly different dimensions to the other flag images, overflowing off the edge of the screen. Changing the CSS styling to 'max-width: 100%' for the flag images fixed this, and stopped the 2 in question overflowing their divs.
+- The background colour was not covering the whole screen. This was because it had been applied to the intro, game and end screens' section elements, rather than to the body element. Applying the background colour and appropriate CSS styling to the body element fixed this issue.
 
 ### Validator Testing
 
