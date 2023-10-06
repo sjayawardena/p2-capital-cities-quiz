@@ -8,11 +8,11 @@ It is the second project for my Diploma in Full Stack Software Development, and 
 
 The quiz is designed so the order of questions is random, with a view to making it replayable.
 
-The site is also responsive across all screen sizes.
+The site is responsive across all screen sizes.
 
 The game is targeted at people who want to test their knowledge of capital cities, and is useful for this purpose.
 
-It is also useful for those who want to test their capitals knowledge with a mixture of difficulty levels.
+It is also useful for those who want to test their capital cities knowledge with a mixture of difficulty levels.
 
 This is a link to the deployed site: https://sjayawardena.github.io/p2-capital-cities-quiz/ 
 
@@ -42,7 +42,7 @@ An an existing user I want to:
 
 World Capital Cities Quiz is designed to make it quick and easy for the user to launch the quiz, with minimal things to read on the home page/introduction screen before starting it - just a quick few points on instructions and what to expect.
 
-There are three screens that the user sees. The intro screen (which effectively functions as a home page), the game screen which cycles through the questions, and the end screen.
+There are three screens that the user sees. The intro screen (which effectively functions as a home/landing page), the game screen which cycles through the questions, and the end screen.
 
 Large button elements with drop shadow CSS styling applied appear on every screen of the quiz so the user knows where they are expected to tap/click.
 
@@ -90,7 +90,7 @@ In the end, some features from the wireframes were ommited for simplicity - name
 
 #### Introduction Screen
 
-- The introduction screen is the first screen the user sees, effectively acting as a home/landing page. The features of the intro screen are detailed below.
+- The intro screen is the first screen the user sees, effectively acting as a home/landing page. The features of the intro screen are detailed below.
 
 ![Screenshot of intro screen](assets/images/screenshots-for-readme/project-2-intro-screen.png)
 
@@ -187,7 +187,7 @@ In the end, some features from the wireframes were ommited for simplicity - name
 
 #### Larger Question Bank
 
-- A much larger bank of countries/cities to be randomly picked for the quiz's 12 questions would give it much more replayability. 
+- A much larger bank of countries/cities to be randomly picked for the quiz's 12 questions would give it much more replayability value. 
 
 #### Select Difficulty
 
@@ -199,7 +199,7 @@ The site was set up by creating a new repository on GitHub, using this template 
 
 The development environment used was GitPod. This was opened initially via the green 'GitPod' button that appeared on the repo's listing on GitHub.
 
-The initial 'git add', 'git commit' and 'git push' were made on 17 September 2023. There have been nearly 70 further commits since then.
+The initial 'git add', 'git commit' and 'git push' were made on 17 September 2023. There have been over 70 further commits since then.
 
 The regular commits and pushes were sent from GitPod back to the repo on GitHub.
 
@@ -250,9 +250,9 @@ On each browser, in all display sizes/modes, all of the following have been test
 
 Problems encountered in testing phases - both at the end of the process and at various stages during the process - include:
 - The answer checking JavaScript functions were not working beyond the first question. This was found to be happening because four variables in script.js - 'selectedAnswer1 = answer1Text.innerText', 'selectedAnswer2 = answer2Text.innerText', 'selectedAnswer3 = answer3Text.innerText', and 'selectedAnswer4 = answer4Text.innerText' - were wrongly being declared outside the relevant functions for checking all four answer options in the quiz. Once they were moved to be declared inside these functions - 'answer1Selected()', 'answer2Selected()', 'answer3Selected()', and 'answer4Selected()' - the quiz then worked as expected, with the correct feedback given on all answer options for each question.
-- When the correct answer was selected on the questions for Egypt, The Philippines or Burkina Faso, the quiz did not successfully progress to the next question. This was found to be because the 'nextQuestion()' function was being called too early within the 'answer3Selected()' and 'answer4Selected()' functions. Once it was moved outside the curly braces it was on, the problem stopped happening.
-- The first question did not always successfully move onto the second after the answer was selected. When this stopped happening, I realised the issue only occurred when the first question was Egypt, The Philippines or Burkina Faso, and so the fix to the previous issue also fixed this.
-- There was an issue with the flag images for the UK and the USA questions, which are slighly different dimensions to the other flag images, overflowing off the edge of the screen. Changing the CSS styling to 'max-width: 100%' for the flag images fixed this, and stopped the 2 in question overflowing their divs.
+- When the correct answer was selected on the questions for Egypt, The Philippines or Burkina Faso, the quiz did not progress to the next question. This was found to be because the 'nextQuestion()' function was being called too early within the 'answer3Selected()' and 'answer4Selected()' functions. Once it was moved outside the curly braces it was in, the problem stopped happening.
+- The first question did not always move onto the second after the answer was selected. When this stopped happening, I realised the issue only occurred when the first question was Egypt, The Philippines or Burkina Faso, and so the fix to the previous issue also fixed this.
+- There was an issue with the flag images for the UK and the USA questions, which are slighly different dimensions to the other flag images, overflowing off the edge of the screen. Changing the CSS styling to 'max-width: 100%' for the flag images fixed this, and stopped the 2 flag images in question overflowing their divs.
 - The background colour was not covering the whole screen. This was because it had been applied to the intro, game and end screens' section elements, rather than to the body element. Applying the background colour and appropriate CSS styling to the body element fixed this issue.
 
 ### Validator Testing
@@ -271,19 +271,26 @@ The html for the site has also passed through the [W3 validation](https://valida
 
 ![Screenshot of W3C index.html validation](assets/images/screenshots-for-readme/project-2-w3c-html-validation.png) 
 
-All screens - intro, game and end - on the site have all scored adequately on the reports generated by Lighthouse. To generate the report, the default CSS which hides the game and end screens when the intro is showing was disabled, so the Lighthouse validation reflects all screens.
+All screens - intro, game and end - on the site have all scored adequately on the report generated by Lighthouse. For the generating of the report, the default CSS which hides the game and end screens when the intro screen is showing was disabled, so the Lighthouse validation reflects all screens. I have shown this in the screenshot below, where the continuation from the bottom of the intro screen to the top of the game screen is visible.
+
+![Screenshot of Lighthouse validation](assets/images/screenshots-for-readme/project-2-lighthouse-validation.png)
 
 ### Unfixed Bugs
+
+There are no unfixed bugs that I am aware of.
 
 ## Credits
 
 ### Content
 - I produced the written content, layout, colour scheme and design of the website.
-- (++credit any sites where difficulty levels for capital cities were taken from++)
-- Credit for quiz questions: https://www.sporcle.com/games/FilipinoBreloom/world-capitals-by-difficulty
+- This existing quiz of capital cities gave me ideas for which countries to put in which difficulty categories: https://www.sporcle.com/games/FilipinoBreloom/world-capitals-by-difficulty
+
+### Code
+- I was advised by the Code Institute Tutor Assistance team on how to structure the nextQuestion() function, including the syntax of its do-while loop.
+- This article helped me to better understand the JavaScript Math.random() method: https://www.shecodes.io/athena/10246-how-to-show-random-questions-in-a-quiz-using-javascript
+
 
 ### Media
-
-(++source of photos++)
+- - The vector artwork image files for the globe-of-flags hero image and all of the country flags came from the [Pixabay website](https://pixabay.com/) for royalty-free images.
 
 

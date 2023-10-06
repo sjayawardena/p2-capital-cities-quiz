@@ -99,7 +99,10 @@ function answer4Selected() {
     nextQuestion();
 }
 
-/** Function to move onto next question */
+/** Function to move onto next question 
+ * Credit to Code Institute Tutor Support for helping me with how to structure 
+ * this function including the syntax of the do-while loop
+*/
 
 function nextQuestion() {
     if (questionsSoFarArray.length < 12) {
