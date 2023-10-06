@@ -4,33 +4,47 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <!-- Meta tags for search engines -->
+
     <meta name="description"
         content="World Capital Cities Quiz. Test your knowledge of global capitals with this multiple choice, online quiz">
     <meta name="World Capital Cities Quiz"
         content="capital cities quiz, capital cities, capital cities test, capital city quiz, capital city test, global capital cities, international capital cities, test capital cities knowledge">
     <title>World Capital Cities Quiz</title>
+
     <!-- Favicon -->
+
     <link rel="icon" type="image/png" sizes="16x16" href="assets/favicons/icons8-favicon-3d-fluency-16.png">
     <link rel="icon" type="image/png" sizes="32x32" href="assets/favicons/icons8-favicon-3d-fluency-32.png">
     <link rel="icon" type="image/png" sizes="96x96" href="assets/favicons/icons8-favicon-3d-fluency-96.png">
 
+
     <!-- Stylesheet -->
+
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
 
 <body>
+
     <!-- Header -->
+
     <header aria-labelledby="logo">
         <a href="index.html" aria-label="Home page">
             <h1 id="logo">World Capital Cities Quiz</h1>
         </a>
     </header>
+
     <!-- INTRO AND INSTRUCTIONS SCREEN -->
+
     <section id="intro-screen">
+
         <!-- Intro image -->
+
         <img src="assets/images/flags/world-flags.png" alt="Globe made up of flags" id="intro-image">
+
         <!-- Instructions -->
+
         <div id="instructions">
             <h2>
                 How to play:
@@ -46,8 +60,10 @@
                     You will be shown your score and progress as you go, and the difficulty will vary.
                 </li>
             </ul>
-            <!-- Start game button -->
         </div>
+
+        <!-- Start game button -->
+
         <div id="start-button-container">
             <input type="submit" id="start-game-button" value="Go!" aria-label="Start game button"
                 onclick="showGameSreen()">
@@ -55,9 +71,11 @@
     </section>
 
     <!-- GAME SCREEN -->
+
     <section id="game-screen">
 
         <!-- Question and answer options -->
+
         <div id="flag-question-answers-container">
             <div id="flag-image-container">
                 <img src="assets/images/flags/world-flags.png" alt="Globe made up of flags" id="flag-image">
@@ -83,6 +101,7 @@
         </div>
 
         <!-- Progress and score indicators -->
+
         <div id="progress-and-score-container">
             <div id="progress">
                 <h3>Question&nbsp;</h3>
@@ -97,19 +116,27 @@
     </section>
 
     <section id="end-screen">
+
         <!-- End screen image -->
+
         <div id="end-screen-image-container">
             <img src="assets/images/flags/world-flags.png" alt="Globe made up of flags" id="end-screen-image">
         </div>
+
         <!-- End message -->
+
         <h1 id="end-message">End message</h1>
         <h1>You scored:</h1>
+
         <!-- End score-->
+
         <div>
             <h1 id="final-score"> </h1>
             <h1 id="out-of">out of 12</h1>
         </div>
+
         <!-- Play again button-->
+
         <div>
             <input type="submit" id="play-again-button" value="Play Again!" aria-label="Play again button"
                 onclick="returnToStart()">
@@ -117,6 +144,7 @@
     </section>
 
     <!-- Footer -->
+
     <footer>
         <p>
             Made for educational purposes
@@ -124,9 +152,9 @@
     </footer>
 
     <!-- Scripts used for site -->
+
     <script src="assets/js/set-questions.js"></script>
     <script src="assets/js/script.js"></script>
-
 </body>
 
 </html>

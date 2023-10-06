@@ -95,7 +95,7 @@ li {
 }
 
 #flag-image {
-    height: 30vh;
+    max-width: 100%;
     padding: 15px;
     align-self: center;
 }
@@ -260,7 +260,7 @@ footer p {
     }
 }
 
-/* HIDE SCREENS AFTER INTRO - SHOW THROUGH JS FUNCTION  */
+/* SHOW HIDE SCREENS INCLUDING ANSWER FEEDBACK - SHOW/HIDE THROUGH JS FUNCTIONS  */
 
 #game-screen {
     display: none;
